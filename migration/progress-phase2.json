@@ -1,0 +1,3265 @@
+{
+  "version": "2.0.0",
+  "source_repo": "/Users/liuchao/openclaw",
+  "target_repo": "/Users/liuchao/openclaw-py",
+  "generated_at": "2026-06-19T13:27:05.391862+00:00",
+  "stats": {
+    "total": 231,
+    "done": 10,
+    "pending": 221,
+    "failed": 0
+  },
+  "current_phase": "phase-2-full",
+  "current_task": "P2-0011",
+  "tasks": [
+    {
+      "id": "P2-0001",
+      "phase": "phase-2-full",
+      "title": "移植 src/acp/control-plane 根文件",
+      "source_paths": [
+        "src/acp/control-plane"
+      ],
+      "target_paths": [
+        "openclaw/acp/control_plane"
+      ],
+      "file_count": 26,
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/acp/control_plane",
+      "completed_at": "2026-06-19T13:30:00+08:00"
+    },
+    {
+      "id": "P2-0002",
+      "phase": "phase-2-full",
+      "title": "移植 src/acp/runtime",
+      "source_paths": [
+        "src/acp/runtime"
+      ],
+      "target_paths": [
+        "openclaw/acp/runtime"
+      ],
+      "file_count": 5,
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/acp/runtime",
+      "completed_at": "2026-06-19T13:30:00+08:00"
+    },
+    {
+      "id": "P2-0003",
+      "phase": "phase-2-full",
+      "title": "移植 src/acp 根文件",
+      "source_paths": [
+        "src/acp"
+      ],
+      "target_paths": [
+        "openclaw/acp"
+      ],
+      "file_count": 24,
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/acp",
+      "completed_at": "2026-06-19T13:30:00+08:00"
+    },
+    {
+      "id": "P2-0004",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/agent-hooks",
+      "source_paths": [
+        "src/agents/agent-hooks"
+      ],
+      "target_paths": [
+        "openclaw/agents/agent_hooks"
+      ],
+      "file_count": 11,
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/agents/agent_hooks",
+      "completed_at": "2026-06-23T12:00:00+08:00"
+    },
+    {
+      "id": "P2-0005",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/auth-profiles 根文件",
+      "source_paths": [
+        "src/agents/auth-profiles"
+      ],
+      "target_paths": [
+        "openclaw/agents/auth_profiles"
+      ],
+      "file_count": 47,
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/agents/auth_profiles",
+      "completed_at": "2026-06-23T12:30:00+08:00",
+      "notes": "Core types, constants, credential-state/normalize; oauth/store/oauth-manager deferred"
+    },
+    {
+      "id": "P2-0006",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/cli-runner 根文件",
+      "source_paths": [
+        "src/agents/cli-runner"
+      ],
+      "target_paths": [
+        "openclaw/agents/cli_runner"
+      ],
+      "file_count": 19,
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/agents/cli_runner",
+      "completed_at": "2026-06-23T13:00:00+08:00",
+      "notes": "helpers, reliability, toml_inline, delivery_evidence, types stub; execute/prepare/bundle-mcp deferred"
+    },
+    {
+      "id": "P2-0007",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/command 根文件",
+      "source_paths": [
+        "src/agents/command"
+      ],
+      "target_paths": [
+        "openclaw/agents/command"
+      ],
+      "file_count": 15,
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/agents/command",
+      "completed_at": "2026-06-23T13:15:00+08:00",
+      "notes": "shared_types, run_context, session partial, claude_cli_project_dir; attempt-execution/delivery deferred"
+    },
+    {
+      "id": "P2-0008",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/embedded-agent-helpers",
+      "source_paths": [
+        "src/agents/embedded-agent-helpers"
+      ],
+      "target_paths": [
+        "openclaw/agents/embedded_agent_helpers"
+      ],
+      "file_count": 12,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/embedded_agent_helpers"
+    },
+    {
+      "id": "P2-0009",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/embedded-agent-runner/run 根文件",
+      "source_paths": [
+        "src/agents/embedded-agent-runner/run"
+      ],
+      "target_paths": [
+        "openclaw/agents/embedded_agent_runner/run"
+      ],
+      "file_count": 64,
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/agents/embedded_agent_runner/run",
+      "completed_at": "2026-06-23T14:00:00+08:00",
+      "notes": "Core policy/helpers ported (~20 modules, 29 tests): abortable, failover_policy, helpers, idle_timeout_breaker, llm_idle_timeout, compaction_timeout, attempt_prompt_helpers, message_merge_strategy, params/types stubs. attempt.ts/setup/stream-wrapper/images/incomplete-turn and remaining attempt.* runtime paths deferred to P2-0010 integration."
+    },
+    {
+      "id": "P2-0010",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/embedded-agent-runner 根文件",
+      "source_paths": [
+        "src/agents/embedded-agent-runner"
+      ],
+      "target_paths": [
+        "openclaw/agents/embedded_agent_runner"
+      ],
+      "file_count": 77,
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/agents/embedded_agent_runner",
+      "completed_at": "2026-06-23T14:30:00+08:00",
+      "notes": "Root: execution_phase, compact_reasons, cache_ttl, prompt_cache_retention, empty_assistant_turn, delivery_evidence, accepted_session_spawn; run/ from P2-0009. compact.ts/run.ts/extra-params/extensions deferred."
+    },
+    {
+      "id": "P2-0011",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/harness 根文件",
+      "source_paths": [
+        "src/agents/harness"
+      ],
+      "target_paths": [
+        "openclaw/agents/harness"
+      ],
+      "file_count": 21,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/harness"
+    },
+    {
+      "id": "P2-0012",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/modes",
+      "source_paths": [
+        "src/agents/modes"
+      ],
+      "target_paths": [
+        "openclaw/agents/modes"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/modes"
+    },
+    {
+      "id": "P2-0013",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/runtime",
+      "source_paths": [
+        "src/agents/runtime"
+      ],
+      "target_paths": [
+        "openclaw/agents/runtime"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/runtime"
+    },
+    {
+      "id": "P2-0014",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/runtime-plan",
+      "source_paths": [
+        "src/agents/runtime-plan"
+      ],
+      "target_paths": [
+        "openclaw/agents/runtime_plan"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/runtime_plan"
+    },
+    {
+      "id": "P2-0015",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/sandbox 根文件",
+      "source_paths": [
+        "src/agents/sandbox"
+      ],
+      "target_paths": [
+        "openclaw/agents/sandbox"
+      ],
+      "file_count": 44,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/sandbox"
+    },
+    {
+      "id": "P2-0016",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/schema",
+      "source_paths": [
+        "src/agents/schema"
+      ],
+      "target_paths": [
+        "openclaw/agents/schema"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/schema"
+    },
+    {
+      "id": "P2-0017",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/sessions/compaction",
+      "source_paths": [
+        "src/agents/sessions/compaction"
+      ],
+      "target_paths": [
+        "openclaw/agents/sessions/compaction"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/sessions/compaction"
+    },
+    {
+      "id": "P2-0018",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/sessions/extensions",
+      "source_paths": [
+        "src/agents/sessions/extensions"
+      ],
+      "target_paths": [
+        "openclaw/agents/sessions/extensions"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/sessions/extensions"
+    },
+    {
+      "id": "P2-0019",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/sessions/tools 根文件",
+      "source_paths": [
+        "src/agents/sessions/tools"
+      ],
+      "target_paths": [
+        "openclaw/agents/sessions/tools"
+      ],
+      "file_count": 19,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/sessions/tools"
+    },
+    {
+      "id": "P2-0020",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/sessions 根文件",
+      "source_paths": [
+        "src/agents/sessions"
+      ],
+      "target_paths": [
+        "openclaw/agents/sessions"
+      ],
+      "file_count": 31,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/sessions"
+    },
+    {
+      "id": "P2-0021",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/tools 根文件",
+      "source_paths": [
+        "src/agents/tools"
+      ],
+      "target_paths": [
+        "openclaw/agents/tools"
+      ],
+      "file_count": 75,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/tools"
+    },
+    {
+      "id": "P2-0022",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents/utils",
+      "source_paths": [
+        "src/agents/utils"
+      ],
+      "target_paths": [
+        "openclaw/agents/utils"
+      ],
+      "file_count": 12,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents/utils"
+    },
+    {
+      "id": "P2-0023",
+      "phase": "phase-2-full",
+      "title": "移植 src/agents 根文件",
+      "source_paths": [
+        "src/agents"
+      ],
+      "target_paths": [
+        "openclaw/agents"
+      ],
+      "file_count": 495,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/agents"
+    },
+    {
+      "id": "P2-0024",
+      "phase": "phase-2-full",
+      "title": "移植 src/auto-reply/reply/commands-acp",
+      "source_paths": [
+        "src/auto-reply/reply/commands-acp"
+      ],
+      "target_paths": [
+        "openclaw/auto_reply/reply/commands_acp"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/auto_reply/reply/commands_acp"
+    },
+    {
+      "id": "P2-0025",
+      "phase": "phase-2-full",
+      "title": "移植 src/auto-reply/reply/commands-subagents",
+      "source_paths": [
+        "src/auto-reply/reply/commands-subagents"
+      ],
+      "target_paths": [
+        "openclaw/auto_reply/reply/commands_subagents"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/auto_reply/reply/commands_subagents"
+    },
+    {
+      "id": "P2-0026",
+      "phase": "phase-2-full",
+      "title": "移植 src/auto-reply/reply/exec",
+      "source_paths": [
+        "src/auto-reply/reply/exec"
+      ],
+      "target_paths": [
+        "openclaw/auto_reply/reply/exec"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/auto_reply/reply/exec"
+    },
+    {
+      "id": "P2-0027",
+      "phase": "phase-2-full",
+      "title": "移植 src/auto-reply/reply/queue",
+      "source_paths": [
+        "src/auto-reply/reply/queue"
+      ],
+      "target_paths": [
+        "openclaw/auto_reply/reply/queue"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/auto_reply/reply/queue"
+    },
+    {
+      "id": "P2-0028",
+      "phase": "phase-2-full",
+      "title": "移植 src/auto-reply/reply/test-fixtures",
+      "source_paths": [
+        "src/auto-reply/reply/test-fixtures"
+      ],
+      "target_paths": [
+        "openclaw/auto_reply/reply/test_fixtures"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/auto_reply/reply/test_fixtures"
+    },
+    {
+      "id": "P2-0029",
+      "phase": "phase-2-full",
+      "title": "移植 src/auto-reply/reply 根文件",
+      "source_paths": [
+        "src/auto-reply/reply"
+      ],
+      "target_paths": [
+        "openclaw/auto_reply/reply"
+      ],
+      "file_count": 259,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/auto_reply/reply"
+    },
+    {
+      "id": "P2-0030",
+      "phase": "phase-2-full",
+      "title": "移植 src/auto-reply/usage-bar",
+      "source_paths": [
+        "src/auto-reply/usage-bar"
+      ],
+      "target_paths": [
+        "openclaw/auto_reply/usage_bar"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/auto_reply/usage_bar"
+    },
+    {
+      "id": "P2-0031",
+      "phase": "phase-2-full",
+      "title": "移植 src/auto-reply 根文件",
+      "source_paths": [
+        "src/auto-reply"
+      ],
+      "target_paths": [
+        "openclaw/auto_reply"
+      ],
+      "file_count": 53,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/auto_reply"
+    },
+    {
+      "id": "P2-0032",
+      "phase": "phase-2-full",
+      "title": "移植 src/bindings",
+      "source_paths": [
+        "src/bindings"
+      ],
+      "target_paths": [
+        "openclaw/bindings"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/bindings"
+    },
+    {
+      "id": "P2-0033",
+      "phase": "phase-2-full",
+      "title": "移植 src/bootstrap",
+      "source_paths": [
+        "src/bootstrap"
+      ],
+      "target_paths": [
+        "openclaw/bootstrap"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/bootstrap"
+    },
+    {
+      "id": "P2-0034",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/allowlists",
+      "source_paths": [
+        "src/channels/allowlists"
+      ],
+      "target_paths": [
+        "openclaw/channels/allowlists"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/allowlists"
+    },
+    {
+      "id": "P2-0035",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/inbound-event",
+      "source_paths": [
+        "src/channels/inbound-event"
+      ],
+      "target_paths": [
+        "openclaw/channels/inbound_event"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/inbound_event"
+    },
+    {
+      "id": "P2-0036",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/message 根文件",
+      "source_paths": [
+        "src/channels/message"
+      ],
+      "target_paths": [
+        "openclaw/channels/message"
+      ],
+      "file_count": 17,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/message"
+    },
+    {
+      "id": "P2-0037",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/message-access",
+      "source_paths": [
+        "src/channels/message-access"
+      ],
+      "target_paths": [
+        "openclaw/channels/message_access"
+      ],
+      "file_count": 13,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/message_access"
+    },
+    {
+      "id": "P2-0038",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/plugins/actions",
+      "source_paths": [
+        "src/channels/plugins/actions"
+      ],
+      "target_paths": [
+        "openclaw/channels/plugins/actions"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/plugins/actions"
+    },
+    {
+      "id": "P2-0039",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/plugins/outbound",
+      "source_paths": [
+        "src/channels/plugins/outbound"
+      ],
+      "target_paths": [
+        "openclaw/channels/plugins/outbound"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/plugins/outbound"
+    },
+    {
+      "id": "P2-0040",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/plugins/status-issues",
+      "source_paths": [
+        "src/channels/plugins/status-issues"
+      ],
+      "target_paths": [
+        "openclaw/channels/plugins/status_issues"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/plugins/status_issues"
+    },
+    {
+      "id": "P2-0041",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/plugins 根文件",
+      "source_paths": [
+        "src/channels/plugins"
+      ],
+      "target_paths": [
+        "openclaw/channels/plugins"
+      ],
+      "file_count": 100,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/plugins"
+    },
+    {
+      "id": "P2-0042",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/status",
+      "source_paths": [
+        "src/channels/status"
+      ],
+      "target_paths": [
+        "openclaw/channels/status"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/status"
+    },
+    {
+      "id": "P2-0043",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/transport",
+      "source_paths": [
+        "src/channels/transport"
+      ],
+      "target_paths": [
+        "openclaw/channels/transport"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/transport"
+    },
+    {
+      "id": "P2-0044",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels/turn",
+      "source_paths": [
+        "src/channels/turn"
+      ],
+      "target_paths": [
+        "openclaw/channels/turn"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels/turn"
+    },
+    {
+      "id": "P2-0045",
+      "phase": "phase-2-full",
+      "title": "移植 src/channels 根文件",
+      "source_paths": [
+        "src/channels"
+      ],
+      "target_paths": [
+        "openclaw/channels"
+      ],
+      "file_count": 55,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/channels"
+    },
+    {
+      "id": "P2-0046",
+      "phase": "phase-2-full",
+      "title": "移植 src/chat",
+      "source_paths": [
+        "src/chat"
+      ],
+      "target_paths": [
+        "openclaw/chat"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/chat"
+    },
+    {
+      "id": "P2-0047",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli/cron-cli",
+      "source_paths": [
+        "src/cli/cron-cli"
+      ],
+      "target_paths": [
+        "openclaw/cli/cron_cli"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli/cron_cli"
+    },
+    {
+      "id": "P2-0048",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli/daemon-cli 根文件",
+      "source_paths": [
+        "src/cli/daemon-cli"
+      ],
+      "target_paths": [
+        "openclaw/cli/daemon_cli"
+      ],
+      "file_count": 20,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli/daemon_cli"
+    },
+    {
+      "id": "P2-0049",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli/gateway-cli",
+      "source_paths": [
+        "src/cli/gateway-cli"
+      ],
+      "target_paths": [
+        "openclaw/cli/gateway_cli"
+      ],
+      "file_count": 14,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli/gateway_cli"
+    },
+    {
+      "id": "P2-0050",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli/node-cli",
+      "source_paths": [
+        "src/cli/node-cli"
+      ],
+      "target_paths": [
+        "openclaw/cli/node_cli"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli/node_cli"
+    },
+    {
+      "id": "P2-0051",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli/nodes-cli 根文件",
+      "source_paths": [
+        "src/cli/nodes-cli"
+      ],
+      "target_paths": [
+        "openclaw/cli/nodes_cli"
+      ],
+      "file_count": 15,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli/nodes_cli"
+    },
+    {
+      "id": "P2-0052",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli/program/message",
+      "source_paths": [
+        "src/cli/program/message"
+      ],
+      "target_paths": [
+        "openclaw/cli/program/message"
+      ],
+      "file_count": 11,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli/program/message"
+    },
+    {
+      "id": "P2-0053",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli/program 根文件",
+      "source_paths": [
+        "src/cli/program"
+      ],
+      "target_paths": [
+        "openclaw/cli/program"
+      ],
+      "file_count": 40,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli/program"
+    },
+    {
+      "id": "P2-0054",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli/send-runtime",
+      "source_paths": [
+        "src/cli/send-runtime"
+      ],
+      "target_paths": [
+        "openclaw/cli/send_runtime"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli/send_runtime"
+    },
+    {
+      "id": "P2-0055",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli/shared",
+      "source_paths": [
+        "src/cli/shared"
+      ],
+      "target_paths": [
+        "openclaw/cli/shared"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli/shared"
+    },
+    {
+      "id": "P2-0056",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli/update-cli",
+      "source_paths": [
+        "src/cli/update-cli"
+      ],
+      "target_paths": [
+        "openclaw/cli/update_cli"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli/update_cli"
+    },
+    {
+      "id": "P2-0057",
+      "phase": "phase-2-full",
+      "title": "移植 src/cli 根文件",
+      "source_paths": [
+        "src/cli"
+      ],
+      "target_paths": [
+        "openclaw/cli"
+      ],
+      "file_count": 144,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cli"
+    },
+    {
+      "id": "P2-0058",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/agent",
+      "source_paths": [
+        "src/commands/agent"
+      ],
+      "target_paths": [
+        "openclaw/commands/agent"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/agent"
+    },
+    {
+      "id": "P2-0059",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/channel-setup",
+      "source_paths": [
+        "src/commands/channel-setup"
+      ],
+      "target_paths": [
+        "openclaw/commands/channel_setup"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/channel_setup"
+    },
+    {
+      "id": "P2-0060",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/channels",
+      "source_paths": [
+        "src/commands/channels"
+      ],
+      "target_paths": [
+        "openclaw/commands/channels"
+      ],
+      "file_count": 11,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/channels"
+    },
+    {
+      "id": "P2-0061",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/doctor/cron",
+      "source_paths": [
+        "src/commands/doctor/cron"
+      ],
+      "target_paths": [
+        "openclaw/commands/doctor/cron"
+      ],
+      "file_count": 10,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/doctor/cron"
+    },
+    {
+      "id": "P2-0062",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/doctor/shared 根文件",
+      "source_paths": [
+        "src/commands/doctor/shared"
+      ],
+      "target_paths": [
+        "openclaw/commands/doctor/shared"
+      ],
+      "file_count": 66,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/doctor/shared"
+    },
+    {
+      "id": "P2-0063",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/doctor 根文件",
+      "source_paths": [
+        "src/commands/doctor"
+      ],
+      "target_paths": [
+        "openclaw/commands/doctor"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/doctor"
+    },
+    {
+      "id": "P2-0064",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/gateway-status",
+      "source_paths": [
+        "src/commands/gateway-status"
+      ],
+      "target_paths": [
+        "openclaw/commands/gateway_status"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/gateway_status"
+    },
+    {
+      "id": "P2-0065",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/migrate",
+      "source_paths": [
+        "src/commands/migrate"
+      ],
+      "target_paths": [
+        "openclaw/commands/migrate"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/migrate"
+    },
+    {
+      "id": "P2-0066",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/models 根文件",
+      "source_paths": [
+        "src/commands/models"
+      ],
+      "target_paths": [
+        "openclaw/commands/models"
+      ],
+      "file_count": 35,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/models"
+    },
+    {
+      "id": "P2-0067",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/onboard-non-interactive",
+      "source_paths": [
+        "src/commands/onboard-non-interactive"
+      ],
+      "target_paths": [
+        "openclaw/commands/onboard_non_interactive"
+      ],
+      "file_count": 13,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/onboard_non_interactive"
+    },
+    {
+      "id": "P2-0068",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/setup",
+      "source_paths": [
+        "src/commands/setup"
+      ],
+      "target_paths": [
+        "openclaw/commands/setup"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/setup"
+    },
+    {
+      "id": "P2-0069",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands/status-all",
+      "source_paths": [
+        "src/commands/status-all"
+      ],
+      "target_paths": [
+        "openclaw/commands/status_all"
+      ],
+      "file_count": 12,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands/status_all"
+    },
+    {
+      "id": "P2-0070",
+      "phase": "phase-2-full",
+      "title": "移植 src/commands 根文件",
+      "source_paths": [
+        "src/commands"
+      ],
+      "target_paths": [
+        "openclaw/commands"
+      ],
+      "file_count": 215,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commands"
+    },
+    {
+      "id": "P2-0071",
+      "phase": "phase-2-full",
+      "title": "移植 src/commitments",
+      "source_paths": [
+        "src/commitments"
+      ],
+      "target_paths": [
+        "openclaw/commitments"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/commitments"
+    },
+    {
+      "id": "P2-0072",
+      "phase": "phase-2-full",
+      "title": "移植 src/compat",
+      "source_paths": [
+        "src/compat"
+      ],
+      "target_paths": [
+        "openclaw/compat"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/compat"
+    },
+    {
+      "id": "P2-0073",
+      "phase": "phase-2-full",
+      "title": "移植 src/config/sessions 根文件",
+      "source_paths": [
+        "src/config/sessions"
+      ],
+      "target_paths": [
+        "openclaw/config/sessions"
+      ],
+      "file_count": 59,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/config/sessions"
+    },
+    {
+      "id": "P2-0074",
+      "phase": "phase-2-full",
+      "title": "移植 src/config 根文件",
+      "source_paths": [
+        "src/config"
+      ],
+      "target_paths": [
+        "openclaw/config"
+      ],
+      "file_count": 171,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/config"
+    },
+    {
+      "id": "P2-0075",
+      "phase": "phase-2-full",
+      "title": "移植 src/context-engine",
+      "source_paths": [
+        "src/context-engine"
+      ],
+      "target_paths": [
+        "openclaw/context_engine"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/context_engine"
+    },
+    {
+      "id": "P2-0076",
+      "phase": "phase-2-full",
+      "title": "移植 src/crestodian",
+      "source_paths": [
+        "src/crestodian"
+      ],
+      "target_paths": [
+        "openclaw/crestodian"
+      ],
+      "file_count": 13,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/crestodian"
+    },
+    {
+      "id": "P2-0077",
+      "phase": "phase-2-full",
+      "title": "移植 src/cron/isolated-agent 根文件",
+      "source_paths": [
+        "src/cron/isolated-agent"
+      ],
+      "target_paths": [
+        "openclaw/cron/isolated_agent"
+      ],
+      "file_count": 37,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cron/isolated_agent"
+    },
+    {
+      "id": "P2-0078",
+      "phase": "phase-2-full",
+      "title": "移植 src/cron/run-log",
+      "source_paths": [
+        "src/cron/run-log"
+      ],
+      "target_paths": [
+        "openclaw/cron/run_log"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cron/run_log"
+    },
+    {
+      "id": "P2-0079",
+      "phase": "phase-2-full",
+      "title": "移植 src/cron/service 根文件",
+      "source_paths": [
+        "src/cron/service"
+      ],
+      "target_paths": [
+        "openclaw/cron/service"
+      ],
+      "file_count": 16,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cron/service"
+    },
+    {
+      "id": "P2-0080",
+      "phase": "phase-2-full",
+      "title": "移植 src/cron/store",
+      "source_paths": [
+        "src/cron/store"
+      ],
+      "target_paths": [
+        "openclaw/cron/store"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cron/store"
+    },
+    {
+      "id": "P2-0081",
+      "phase": "phase-2-full",
+      "title": "移植 src/cron 根文件",
+      "source_paths": [
+        "src/cron"
+      ],
+      "target_paths": [
+        "openclaw/cron"
+      ],
+      "file_count": 41,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/cron"
+    },
+    {
+      "id": "P2-0082",
+      "phase": "phase-2-full",
+      "title": "移植 src/daemon 根文件",
+      "source_paths": [
+        "src/daemon"
+      ],
+      "target_paths": [
+        "openclaw/daemon"
+      ],
+      "file_count": 42,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/daemon"
+    },
+    {
+      "id": "P2-0083",
+      "phase": "phase-2-full",
+      "title": "移植 src/flows",
+      "source_paths": [
+        "src/flows"
+      ],
+      "target_paths": [
+        "openclaw/flows"
+      ],
+      "file_count": 25,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/flows"
+    },
+    {
+      "id": "P2-0084",
+      "phase": "phase-2-full",
+      "title": "移植 src/gateway/methods",
+      "source_paths": [
+        "src/gateway/methods"
+      ],
+      "target_paths": [
+        "openclaw/gateway/methods"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/gateway/methods"
+    },
+    {
+      "id": "P2-0085",
+      "phase": "phase-2-full",
+      "title": "移植 src/gateway/server/__tests__",
+      "source_paths": [
+        "src/gateway/server/__tests__"
+      ],
+      "target_paths": [
+        "openclaw/gateway/server/__tests__"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/gateway/server/__tests__"
+    },
+    {
+      "id": "P2-0086",
+      "phase": "phase-2-full",
+      "title": "移植 src/gateway/server/plugins-http",
+      "source_paths": [
+        "src/gateway/server/plugins-http"
+      ],
+      "target_paths": [
+        "openclaw/gateway/server/plugins_http"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/gateway/server/plugins_http"
+    },
+    {
+      "id": "P2-0087",
+      "phase": "phase-2-full",
+      "title": "移植 src/gateway/server/ws-connection",
+      "source_paths": [
+        "src/gateway/server/ws-connection"
+      ],
+      "target_paths": [
+        "openclaw/gateway/server/ws_connection"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/gateway/server/ws_connection"
+    },
+    {
+      "id": "P2-0088",
+      "phase": "phase-2-full",
+      "title": "移植 src/gateway/server 根文件",
+      "source_paths": [
+        "src/gateway/server"
+      ],
+      "target_paths": [
+        "openclaw/gateway/server"
+      ],
+      "file_count": 18,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/gateway/server"
+    },
+    {
+      "id": "P2-0089",
+      "phase": "phase-2-full",
+      "title": "移植 src/gateway/server-methods 根文件",
+      "source_paths": [
+        "src/gateway/server-methods"
+      ],
+      "target_paths": [
+        "openclaw/gateway/server_methods"
+      ],
+      "file_count": 84,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/gateway/server_methods"
+    },
+    {
+      "id": "P2-0090",
+      "phase": "phase-2-full",
+      "title": "移植 src/gateway/test",
+      "source_paths": [
+        "src/gateway/test"
+      ],
+      "target_paths": [
+        "openclaw/gateway/test"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/gateway/test"
+    },
+    {
+      "id": "P2-0091",
+      "phase": "phase-2-full",
+      "title": "移植 src/gateway 根文件",
+      "source_paths": [
+        "src/gateway"
+      ],
+      "target_paths": [
+        "openclaw/gateway"
+      ],
+      "file_count": 271,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/gateway"
+    },
+    {
+      "id": "P2-0092",
+      "phase": "phase-2-full",
+      "title": "移植 src/hooks",
+      "source_paths": [
+        "src/hooks"
+      ],
+      "target_paths": [
+        "openclaw/hooks"
+      ],
+      "file_count": 35,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/hooks"
+    },
+    {
+      "id": "P2-0093",
+      "phase": "phase-2-full",
+      "title": "移植 src/image-generation",
+      "source_paths": [
+        "src/image-generation"
+      ],
+      "target_paths": [
+        "openclaw/image_generation"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/image_generation"
+    },
+    {
+      "id": "P2-0094",
+      "phase": "phase-2-full",
+      "title": "移植 src/infra/command-analysis",
+      "source_paths": [
+        "src/infra/command-analysis"
+      ],
+      "target_paths": [
+        "openclaw/infra/command_analysis"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/infra/command_analysis"
+    },
+    {
+      "id": "P2-0095",
+      "phase": "phase-2-full",
+      "title": "移植 src/infra/command-explainer",
+      "source_paths": [
+        "src/infra/command-explainer"
+      ],
+      "target_paths": [
+        "openclaw/infra/command_explainer"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/infra/command_explainer"
+    },
+    {
+      "id": "P2-0096",
+      "phase": "phase-2-full",
+      "title": "移植 src/infra/format-time",
+      "source_paths": [
+        "src/infra/format-time"
+      ],
+      "target_paths": [
+        "openclaw/infra/format_time"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/infra/format_time"
+    },
+    {
+      "id": "P2-0097",
+      "phase": "phase-2-full",
+      "title": "移植 src/infra/net/proxy",
+      "source_paths": [
+        "src/infra/net/proxy"
+      ],
+      "target_paths": [
+        "openclaw/infra/net/proxy"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/infra/net/proxy"
+    },
+    {
+      "id": "P2-0098",
+      "phase": "phase-2-full",
+      "title": "移植 src/infra/net 根文件",
+      "source_paths": [
+        "src/infra/net"
+      ],
+      "target_paths": [
+        "openclaw/infra/net"
+      ],
+      "file_count": 13,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/infra/net"
+    },
+    {
+      "id": "P2-0099",
+      "phase": "phase-2-full",
+      "title": "移植 src/infra/outbound 根文件",
+      "source_paths": [
+        "src/infra/outbound"
+      ],
+      "target_paths": [
+        "openclaw/infra/outbound"
+      ],
+      "file_count": 72,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/infra/outbound"
+    },
+    {
+      "id": "P2-0100",
+      "phase": "phase-2-full",
+      "title": "移植 src/infra/tls",
+      "source_paths": [
+        "src/infra/tls"
+      ],
+      "target_paths": [
+        "openclaw/infra/tls"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/infra/tls"
+    },
+    {
+      "id": "P2-0101",
+      "phase": "phase-2-full",
+      "title": "移植 src/infra 根文件",
+      "source_paths": [
+        "src/infra"
+      ],
+      "target_paths": [
+        "openclaw/infra"
+      ],
+      "file_count": 307,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/infra"
+    },
+    {
+      "id": "P2-0102",
+      "phase": "phase-2-full",
+      "title": "移植 src/interactive",
+      "source_paths": [
+        "src/interactive"
+      ],
+      "target_paths": [
+        "openclaw/interactive"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/interactive"
+    },
+    {
+      "id": "P2-0103",
+      "phase": "phase-2-full",
+      "title": "移植 src/link-understanding",
+      "source_paths": [
+        "src/link-understanding"
+      ],
+      "target_paths": [
+        "openclaw/link_understanding"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/link_understanding"
+    },
+    {
+      "id": "P2-0104",
+      "phase": "phase-2-full",
+      "title": "移植 src/llm/providers/stream-wrappers",
+      "source_paths": [
+        "src/llm/providers/stream-wrappers"
+      ],
+      "target_paths": [
+        "openclaw/llm/providers/stream_wrappers"
+      ],
+      "file_count": 12,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/llm/providers/stream_wrappers"
+    },
+    {
+      "id": "P2-0105",
+      "phase": "phase-2-full",
+      "title": "移植 src/llm/providers 根文件",
+      "source_paths": [
+        "src/llm/providers"
+      ],
+      "target_paths": [
+        "openclaw/llm/providers"
+      ],
+      "file_count": 20,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/llm/providers"
+    },
+    {
+      "id": "P2-0106",
+      "phase": "phase-2-full",
+      "title": "移植 src/llm/utils/oauth",
+      "source_paths": [
+        "src/llm/utils/oauth"
+      ],
+      "target_paths": [
+        "openclaw/llm/utils/oauth"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/llm/utils/oauth"
+    },
+    {
+      "id": "P2-0107",
+      "phase": "phase-2-full",
+      "title": "移植 src/llm/utils 根文件",
+      "source_paths": [
+        "src/llm/utils"
+      ],
+      "target_paths": [
+        "openclaw/llm/utils"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/llm/utils"
+    },
+    {
+      "id": "P2-0108",
+      "phase": "phase-2-full",
+      "title": "移植 src/llm 根文件",
+      "source_paths": [
+        "src/llm"
+      ],
+      "target_paths": [
+        "openclaw/llm"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/llm"
+    },
+    {
+      "id": "P2-0109",
+      "phase": "phase-2-full",
+      "title": "移植 src/logging",
+      "source_paths": [
+        "src/logging"
+      ],
+      "target_paths": [
+        "openclaw/logging"
+      ],
+      "file_count": 39,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/logging"
+    },
+    {
+      "id": "P2-0110",
+      "phase": "phase-2-full",
+      "title": "移植 src/mcp",
+      "source_paths": [
+        "src/mcp"
+      ],
+      "target_paths": [
+        "openclaw/mcp"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/mcp"
+    },
+    {
+      "id": "P2-0111",
+      "phase": "phase-2-full",
+      "title": "移植 src/media",
+      "source_paths": [
+        "src/media"
+      ],
+      "target_paths": [
+        "openclaw/media"
+      ],
+      "file_count": 32,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/media"
+    },
+    {
+      "id": "P2-0112",
+      "phase": "phase-2-full",
+      "title": "移植 src/media-generation",
+      "source_paths": [
+        "src/media-generation"
+      ],
+      "target_paths": [
+        "openclaw/media_generation"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/media_generation"
+    },
+    {
+      "id": "P2-0113",
+      "phase": "phase-2-full",
+      "title": "移植 src/media-understanding",
+      "source_paths": [
+        "src/media-understanding"
+      ],
+      "target_paths": [
+        "openclaw/media_understanding"
+      ],
+      "file_count": 38,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/media_understanding"
+    },
+    {
+      "id": "P2-0114",
+      "phase": "phase-2-full",
+      "title": "移植 src/memory",
+      "source_paths": [
+        "src/memory"
+      ],
+      "target_paths": [
+        "openclaw/memory"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/memory"
+    },
+    {
+      "id": "P2-0115",
+      "phase": "phase-2-full",
+      "title": "移植 src/memory-host-sdk",
+      "source_paths": [
+        "src/memory-host-sdk"
+      ],
+      "target_paths": [
+        "openclaw/memory_host_sdk"
+      ],
+      "file_count": 11,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/memory_host_sdk"
+    },
+    {
+      "id": "P2-0116",
+      "phase": "phase-2-full",
+      "title": "移植 src/model-catalog",
+      "source_paths": [
+        "src/model-catalog"
+      ],
+      "target_paths": [
+        "openclaw/model_catalog"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/model_catalog"
+    },
+    {
+      "id": "P2-0117",
+      "phase": "phase-2-full",
+      "title": "移植 src/music-generation",
+      "source_paths": [
+        "src/music-generation"
+      ],
+      "target_paths": [
+        "openclaw/music_generation"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/music_generation"
+    },
+    {
+      "id": "P2-0118",
+      "phase": "phase-2-full",
+      "title": "移植 src/node-host",
+      "source_paths": [
+        "src/node-host"
+      ],
+      "target_paths": [
+        "openclaw/node_host"
+      ],
+      "file_count": 10,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/node_host"
+    },
+    {
+      "id": "P2-0119",
+      "phase": "phase-2-full",
+      "title": "移植 src/pairing",
+      "source_paths": [
+        "src/pairing"
+      ],
+      "target_paths": [
+        "openclaw/pairing"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/pairing"
+    },
+    {
+      "id": "P2-0120",
+      "phase": "phase-2-full",
+      "title": "移植 src/plugin-sdk 根文件",
+      "source_paths": [
+        "src/plugin-sdk"
+      ],
+      "target_paths": [
+        "openclaw/plugin_sdk"
+      ],
+      "file_count": 413,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/plugin_sdk"
+    },
+    {
+      "id": "P2-0121",
+      "phase": "phase-2-full",
+      "title": "移植 src/plugin-state",
+      "source_paths": [
+        "src/plugin-state"
+      ],
+      "target_paths": [
+        "openclaw/plugin_state"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/plugin_state"
+    },
+    {
+      "id": "P2-0122",
+      "phase": "phase-2-full",
+      "title": "移植 src/plugins/capability-runtime-vitest-shims",
+      "source_paths": [
+        "src/plugins/capability-runtime-vitest-shims"
+      ],
+      "target_paths": [
+        "openclaw/plugins/capability_runtime_vitest_shims"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/plugins/capability_runtime_vitest_shims"
+    },
+    {
+      "id": "P2-0123",
+      "phase": "phase-2-full",
+      "title": "移植 src/plugins/compat",
+      "source_paths": [
+        "src/plugins/compat"
+      ],
+      "target_paths": [
+        "openclaw/plugins/compat"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/plugins/compat"
+    },
+    {
+      "id": "P2-0124",
+      "phase": "phase-2-full",
+      "title": "移植 src/plugins/contracts",
+      "source_paths": [
+        "src/plugins/contracts"
+      ],
+      "target_paths": [
+        "openclaw/plugins/contracts"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/plugins/contracts"
+    },
+    {
+      "id": "P2-0125",
+      "phase": "phase-2-full",
+      "title": "移植 src/plugins/runtime 根文件",
+      "source_paths": [
+        "src/plugins/runtime"
+      ],
+      "target_paths": [
+        "openclaw/plugins/runtime"
+      ],
+      "file_count": 32,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/plugins/runtime"
+    },
+    {
+      "id": "P2-0126",
+      "phase": "phase-2-full",
+      "title": "移植 src/plugins 根文件",
+      "source_paths": [
+        "src/plugins"
+      ],
+      "target_paths": [
+        "openclaw/plugins"
+      ],
+      "file_count": 309,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/plugins"
+    },
+    {
+      "id": "P2-0127",
+      "phase": "phase-2-full",
+      "title": "移植 src/process",
+      "source_paths": [
+        "src/process"
+      ],
+      "target_paths": [
+        "openclaw/process"
+      ],
+      "file_count": 20,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/process"
+    },
+    {
+      "id": "P2-0128",
+      "phase": "phase-2-full",
+      "title": "移植 src/provider-runtime",
+      "source_paths": [
+        "src/provider-runtime"
+      ],
+      "target_paths": [
+        "openclaw/provider_runtime"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/provider_runtime"
+    },
+    {
+      "id": "P2-0129",
+      "phase": "phase-2-full",
+      "title": "移植 src/proxy-capture",
+      "source_paths": [
+        "src/proxy-capture"
+      ],
+      "target_paths": [
+        "openclaw/proxy_capture"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/proxy_capture"
+    },
+    {
+      "id": "P2-0130",
+      "phase": "phase-2-full",
+      "title": "移植 src/realtime-transcription",
+      "source_paths": [
+        "src/realtime-transcription"
+      ],
+      "target_paths": [
+        "openclaw/realtime_transcription"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/realtime_transcription"
+    },
+    {
+      "id": "P2-0131",
+      "phase": "phase-2-full",
+      "title": "移植 src/routing",
+      "source_paths": [
+        "src/routing"
+      ],
+      "target_paths": [
+        "openclaw/routing"
+      ],
+      "file_count": 10,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/routing"
+    },
+    {
+      "id": "P2-0132",
+      "phase": "phase-2-full",
+      "title": "移植 src/secrets 根文件",
+      "source_paths": [
+        "src/secrets"
+      ],
+      "target_paths": [
+        "openclaw/secrets"
+      ],
+      "file_count": 69,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/secrets"
+    },
+    {
+      "id": "P2-0133",
+      "phase": "phase-2-full",
+      "title": "移植 src/security",
+      "source_paths": [
+        "src/security"
+      ],
+      "target_paths": [
+        "openclaw/security"
+      ],
+      "file_count": 38,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/security"
+    },
+    {
+      "id": "P2-0134",
+      "phase": "phase-2-full",
+      "title": "移植 src/sessions",
+      "source_paths": [
+        "src/sessions"
+      ],
+      "target_paths": [
+        "openclaw/sessions"
+      ],
+      "file_count": 15,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/sessions"
+    },
+    {
+      "id": "P2-0135",
+      "phase": "phase-2-full",
+      "title": "移植 src/shared/text",
+      "source_paths": [
+        "src/shared/text"
+      ],
+      "target_paths": [
+        "openclaw/shared/text"
+      ],
+      "file_count": 12,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/shared/text"
+    },
+    {
+      "id": "P2-0136",
+      "phase": "phase-2-full",
+      "title": "移植 src/shared 根文件",
+      "source_paths": [
+        "src/shared"
+      ],
+      "target_paths": [
+        "openclaw/shared"
+      ],
+      "file_count": 66,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/shared"
+    },
+    {
+      "id": "P2-0137",
+      "phase": "phase-2-full",
+      "title": "移植 src/skills/config",
+      "source_paths": [
+        "src/skills/config"
+      ],
+      "target_paths": [
+        "openclaw/skills/config"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/skills/config"
+    },
+    {
+      "id": "P2-0138",
+      "phase": "phase-2-full",
+      "title": "移植 src/skills/discovery",
+      "source_paths": [
+        "src/skills/discovery"
+      ],
+      "target_paths": [
+        "openclaw/skills/discovery"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/skills/discovery"
+    },
+    {
+      "id": "P2-0139",
+      "phase": "phase-2-full",
+      "title": "移植 src/skills/lifecycle",
+      "source_paths": [
+        "src/skills/lifecycle"
+      ],
+      "target_paths": [
+        "openclaw/skills/lifecycle"
+      ],
+      "file_count": 13,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/skills/lifecycle"
+    },
+    {
+      "id": "P2-0140",
+      "phase": "phase-2-full",
+      "title": "移植 src/skills/loading",
+      "source_paths": [
+        "src/skills/loading"
+      ],
+      "target_paths": [
+        "openclaw/skills/loading"
+      ],
+      "file_count": 14,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/skills/loading"
+    },
+    {
+      "id": "P2-0141",
+      "phase": "phase-2-full",
+      "title": "移植 src/skills/research",
+      "source_paths": [
+        "src/skills/research"
+      ],
+      "target_paths": [
+        "openclaw/skills/research"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/skills/research"
+    },
+    {
+      "id": "P2-0142",
+      "phase": "phase-2-full",
+      "title": "移植 src/skills/runtime",
+      "source_paths": [
+        "src/skills/runtime"
+      ],
+      "target_paths": [
+        "openclaw/skills/runtime"
+      ],
+      "file_count": 12,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/skills/runtime"
+    },
+    {
+      "id": "P2-0143",
+      "phase": "phase-2-full",
+      "title": "移植 src/skills/security",
+      "source_paths": [
+        "src/skills/security"
+      ],
+      "target_paths": [
+        "openclaw/skills/security"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/skills/security"
+    },
+    {
+      "id": "P2-0144",
+      "phase": "phase-2-full",
+      "title": "移植 src/skills/test-support",
+      "source_paths": [
+        "src/skills/test-support"
+      ],
+      "target_paths": [
+        "openclaw/skills/test_support"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/skills/test_support"
+    },
+    {
+      "id": "P2-0145",
+      "phase": "phase-2-full",
+      "title": "移植 src/skills/workshop",
+      "source_paths": [
+        "src/skills/workshop"
+      ],
+      "target_paths": [
+        "openclaw/skills/workshop"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/skills/workshop"
+    },
+    {
+      "id": "P2-0146",
+      "phase": "phase-2-full",
+      "title": "移植 src/state",
+      "source_paths": [
+        "src/state"
+      ],
+      "target_paths": [
+        "openclaw/state"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/state"
+    },
+    {
+      "id": "P2-0147",
+      "phase": "phase-2-full",
+      "title": "移植 src/status",
+      "source_paths": [
+        "src/status"
+      ],
+      "target_paths": [
+        "openclaw/status"
+      ],
+      "file_count": 10,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/status"
+    },
+    {
+      "id": "P2-0148",
+      "phase": "phase-2-full",
+      "title": "移植 src/talk",
+      "source_paths": [
+        "src/talk"
+      ],
+      "target_paths": [
+        "openclaw/talk"
+      ],
+      "file_count": 24,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/talk"
+    },
+    {
+      "id": "P2-0149",
+      "phase": "phase-2-full",
+      "title": "移植 src/tasks 根文件",
+      "source_paths": [
+        "src/tasks"
+      ],
+      "target_paths": [
+        "openclaw/tasks"
+      ],
+      "file_count": 40,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/tasks"
+    },
+    {
+      "id": "P2-0150",
+      "phase": "phase-2-full",
+      "title": "移植 src/tools",
+      "source_paths": [
+        "src/tools"
+      ],
+      "target_paths": [
+        "openclaw/tools"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/tools"
+    },
+    {
+      "id": "P2-0151",
+      "phase": "phase-2-full",
+      "title": "移植 src/trajectory",
+      "source_paths": [
+        "src/trajectory"
+      ],
+      "target_paths": [
+        "openclaw/trajectory"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/trajectory"
+    },
+    {
+      "id": "P2-0152",
+      "phase": "phase-2-full",
+      "title": "移植 src/transcripts",
+      "source_paths": [
+        "src/transcripts"
+      ],
+      "target_paths": [
+        "openclaw/transcripts"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/transcripts"
+    },
+    {
+      "id": "P2-0153",
+      "phase": "phase-2-full",
+      "title": "移植 src/tts",
+      "source_paths": [
+        "src/tts"
+      ],
+      "target_paths": [
+        "openclaw/tts"
+      ],
+      "file_count": 14,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/tts"
+    },
+    {
+      "id": "P2-0154",
+      "phase": "phase-2-full",
+      "title": "移植 src/tui",
+      "source_paths": [
+        "src/tui"
+      ],
+      "target_paths": [
+        "openclaw/tui"
+      ],
+      "file_count": 37,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/tui"
+    },
+    {
+      "id": "P2-0155",
+      "phase": "phase-2-full",
+      "title": "移植 src/types",
+      "source_paths": [
+        "src/types"
+      ],
+      "target_paths": [
+        "openclaw/types"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/types"
+    },
+    {
+      "id": "P2-0156",
+      "phase": "phase-2-full",
+      "title": "移植 src/utils",
+      "source_paths": [
+        "src/utils"
+      ],
+      "target_paths": [
+        "openclaw/utils"
+      ],
+      "file_count": 29,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/utils"
+    },
+    {
+      "id": "P2-0157",
+      "phase": "phase-2-full",
+      "title": "移植 src/video-generation",
+      "source_paths": [
+        "src/video-generation"
+      ],
+      "target_paths": [
+        "openclaw/video_generation"
+      ],
+      "file_count": 11,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/video_generation"
+    },
+    {
+      "id": "P2-0158",
+      "phase": "phase-2-full",
+      "title": "移植 src/web-fetch",
+      "source_paths": [
+        "src/web-fetch"
+      ],
+      "target_paths": [
+        "openclaw/web_fetch"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/web_fetch"
+    },
+    {
+      "id": "P2-0159",
+      "phase": "phase-2-full",
+      "title": "移植 src/web-search",
+      "source_paths": [
+        "src/web-search"
+      ],
+      "target_paths": [
+        "openclaw/web_search"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/web_search"
+    },
+    {
+      "id": "P2-0160",
+      "phase": "phase-2-full",
+      "title": "移植 src/wizard",
+      "source_paths": [
+        "src/wizard"
+      ],
+      "target_paths": [
+        "openclaw/wizard"
+      ],
+      "file_count": 19,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw/wizard"
+    },
+    {
+      "id": "P2-0161",
+      "phase": "phase-2-full",
+      "title": "移植 packages/acp-core",
+      "source_paths": [
+        "packages/acp-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/acp_core"
+      ],
+      "file_count": 15,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/acp_core"
+    },
+    {
+      "id": "P2-0162",
+      "phase": "phase-2-full",
+      "title": "移植 packages/agent-core",
+      "source_paths": [
+        "packages/agent-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/agent_core"
+      ],
+      "file_count": 33,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/agent_core"
+    },
+    {
+      "id": "P2-0163",
+      "phase": "phase-2-full",
+      "title": "移植 packages/gateway-client",
+      "source_paths": [
+        "packages/gateway-client"
+      ],
+      "target_paths": [
+        "openclaw_packages/gateway_client"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/gateway_client"
+    },
+    {
+      "id": "P2-0164",
+      "phase": "phase-2-full",
+      "title": "移植 packages/gateway-protocol",
+      "source_paths": [
+        "packages/gateway-protocol"
+      ],
+      "target_paths": [
+        "openclaw_packages/gateway_protocol"
+      ],
+      "file_count": 32,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/gateway_protocol"
+    },
+    {
+      "id": "P2-0165",
+      "phase": "phase-2-full",
+      "title": "移植 packages/llm-core",
+      "source_paths": [
+        "packages/llm-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/llm_core"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/llm_core"
+    },
+    {
+      "id": "P2-0166",
+      "phase": "phase-2-full",
+      "title": "移植 packages/llm-runtime",
+      "source_paths": [
+        "packages/llm-runtime"
+      ],
+      "target_paths": [
+        "openclaw_packages/llm_runtime"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/llm_runtime"
+    },
+    {
+      "id": "P2-0167",
+      "phase": "phase-2-full",
+      "title": "移植 packages/markdown-core",
+      "source_paths": [
+        "packages/markdown-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/markdown_core"
+      ],
+      "file_count": 10,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/markdown_core"
+    },
+    {
+      "id": "P2-0168",
+      "phase": "phase-2-full",
+      "title": "移植 packages/media-core",
+      "source_paths": [
+        "packages/media-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/media_core"
+      ],
+      "file_count": 12,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/media_core"
+    },
+    {
+      "id": "P2-0169",
+      "phase": "phase-2-full",
+      "title": "移植 packages/media-generation-core",
+      "source_paths": [
+        "packages/media-generation-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/media_generation_core"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/media_generation_core"
+    },
+    {
+      "id": "P2-0170",
+      "phase": "phase-2-full",
+      "title": "移植 packages/media-understanding-common",
+      "source_paths": [
+        "packages/media-understanding-common"
+      ],
+      "target_paths": [
+        "openclaw_packages/media_understanding_common"
+      ],
+      "file_count": 11,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/media_understanding_common"
+    },
+    {
+      "id": "P2-0171",
+      "phase": "phase-2-full",
+      "title": "移植 packages/memory-host-sdk",
+      "source_paths": [
+        "packages/memory-host-sdk"
+      ],
+      "target_paths": [
+        "openclaw_packages/memory_host_sdk"
+      ],
+      "file_count": 80,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/memory_host_sdk"
+    },
+    {
+      "id": "P2-0172",
+      "phase": "phase-2-full",
+      "title": "移植 packages/model-catalog-core",
+      "source_paths": [
+        "packages/model-catalog-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/model_catalog_core"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/model_catalog_core"
+    },
+    {
+      "id": "P2-0173",
+      "phase": "phase-2-full",
+      "title": "移植 packages/net-policy",
+      "source_paths": [
+        "packages/net-policy"
+      ],
+      "target_paths": [
+        "openclaw_packages/net_policy"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/net_policy"
+    },
+    {
+      "id": "P2-0174",
+      "phase": "phase-2-full",
+      "title": "移植 packages/normalization-core",
+      "source_paths": [
+        "packages/normalization-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/normalization_core"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/normalization_core"
+    },
+    {
+      "id": "P2-0175",
+      "phase": "phase-2-full",
+      "title": "移植 packages/plugin-package-contract",
+      "source_paths": [
+        "packages/plugin-package-contract"
+      ],
+      "target_paths": [
+        "openclaw_packages/plugin_package_contract"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/plugin_package_contract"
+    },
+    {
+      "id": "P2-0176",
+      "phase": "phase-2-full",
+      "title": "移植 packages/plugin-sdk",
+      "source_paths": [
+        "packages/plugin-sdk"
+      ],
+      "target_paths": [
+        "openclaw_packages/plugin_sdk"
+      ],
+      "file_count": 25,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/plugin_sdk"
+    },
+    {
+      "id": "P2-0177",
+      "phase": "phase-2-full",
+      "title": "移植 packages/sdk",
+      "source_paths": [
+        "packages/sdk"
+      ],
+      "target_paths": [
+        "openclaw_packages/sdk"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/sdk"
+    },
+    {
+      "id": "P2-0178",
+      "phase": "phase-2-full",
+      "title": "移植 packages/speech-core",
+      "source_paths": [
+        "packages/speech-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/speech_core"
+      ],
+      "file_count": 1,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/speech_core"
+    },
+    {
+      "id": "P2-0179",
+      "phase": "phase-2-full",
+      "title": "移植 packages/terminal-core",
+      "source_paths": [
+        "packages/terminal-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/terminal_core"
+      ],
+      "file_count": 20,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/terminal_core"
+    },
+    {
+      "id": "P2-0180",
+      "phase": "phase-2-full",
+      "title": "移植 packages/tool-call-repair",
+      "source_paths": [
+        "packages/tool-call-repair"
+      ],
+      "target_paths": [
+        "openclaw_packages/tool_call_repair"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/tool_call_repair"
+    },
+    {
+      "id": "P2-0181",
+      "phase": "phase-2-full",
+      "title": "移植 packages/web-content-core",
+      "source_paths": [
+        "packages/web-content-core"
+      ],
+      "target_paths": [
+        "openclaw_packages/web_content_core"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_packages/web_content_core"
+    },
+    {
+      "id": "P2-0182",
+      "phase": "phase-2-full",
+      "title": "移植 extension acpx",
+      "source_paths": [
+        "extensions/acpx"
+      ],
+      "target_paths": [
+        "openclaw_extensions/acpx"
+      ],
+      "file_count": 17,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/acpx"
+    },
+    {
+      "id": "P2-0183",
+      "phase": "phase-2-full",
+      "title": "移植 extension active-memory",
+      "source_paths": [
+        "extensions/active-memory"
+      ],
+      "target_paths": [
+        "openclaw_extensions/active-memory"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/active-memory"
+    },
+    {
+      "id": "P2-0184",
+      "phase": "phase-2-full",
+      "title": "移植 extension admin-http-rpc",
+      "source_paths": [
+        "extensions/admin-http-rpc"
+      ],
+      "target_paths": [
+        "openclaw_extensions/admin-http-rpc"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/admin-http-rpc"
+    },
+    {
+      "id": "P2-0185",
+      "phase": "phase-2-full",
+      "title": "移植 extension alibaba",
+      "source_paths": [
+        "extensions/alibaba"
+      ],
+      "target_paths": [
+        "openclaw_extensions/alibaba"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/alibaba"
+    },
+    {
+      "id": "P2-0186",
+      "phase": "phase-2-full",
+      "title": "移植 extension amazon-bedrock",
+      "source_paths": [
+        "extensions/amazon-bedrock"
+      ],
+      "target_paths": [
+        "openclaw_extensions/amazon-bedrock"
+      ],
+      "file_count": 15,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/amazon-bedrock"
+    },
+    {
+      "id": "P2-0187",
+      "phase": "phase-2-full",
+      "title": "移植 extension amazon-bedrock-mantle",
+      "source_paths": [
+        "extensions/amazon-bedrock-mantle"
+      ],
+      "target_paths": [
+        "openclaw_extensions/amazon-bedrock-mantle"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/amazon-bedrock-mantle"
+    },
+    {
+      "id": "P2-0188",
+      "phase": "phase-2-full",
+      "title": "移植 extension anthropic",
+      "source_paths": [
+        "extensions/anthropic"
+      ],
+      "target_paths": [
+        "openclaw_extensions/anthropic"
+      ],
+      "file_count": 20,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/anthropic"
+    },
+    {
+      "id": "P2-0189",
+      "phase": "phase-2-full",
+      "title": "移植 extension anthropic-vertex",
+      "source_paths": [
+        "extensions/anthropic-vertex"
+      ],
+      "target_paths": [
+        "openclaw_extensions/anthropic-vertex"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/anthropic-vertex"
+    },
+    {
+      "id": "P2-0190",
+      "phase": "phase-2-full",
+      "title": "移植 extension arcee",
+      "source_paths": [
+        "extensions/arcee"
+      ],
+      "target_paths": [
+        "openclaw_extensions/arcee"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/arcee"
+    },
+    {
+      "id": "P2-0191",
+      "phase": "phase-2-full",
+      "title": "移植 extension azure-speech",
+      "source_paths": [
+        "extensions/azure-speech"
+      ],
+      "target_paths": [
+        "openclaw_extensions/azure-speech"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/azure-speech"
+    },
+    {
+      "id": "P2-0192",
+      "phase": "phase-2-full",
+      "title": "移植 extension bonjour",
+      "source_paths": [
+        "extensions/bonjour"
+      ],
+      "target_paths": [
+        "openclaw_extensions/bonjour"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/bonjour"
+    },
+    {
+      "id": "P2-0193",
+      "phase": "phase-2-full",
+      "title": "移植 extension brave",
+      "source_paths": [
+        "extensions/brave"
+      ],
+      "target_paths": [
+        "openclaw_extensions/brave"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/brave"
+    },
+    {
+      "id": "P2-0194",
+      "phase": "phase-2-full",
+      "title": "移植 extension browser",
+      "source_paths": [
+        "extensions/browser"
+      ],
+      "target_paths": [
+        "openclaw_extensions/browser"
+      ],
+      "file_count": 209,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/browser"
+    },
+    {
+      "id": "P2-0195",
+      "phase": "phase-2-full",
+      "title": "移植 extension byteplus",
+      "source_paths": [
+        "extensions/byteplus"
+      ],
+      "target_paths": [
+        "openclaw_extensions/byteplus"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/byteplus"
+    },
+    {
+      "id": "P2-0196",
+      "phase": "phase-2-full",
+      "title": "移植 extension canvas",
+      "source_paths": [
+        "extensions/canvas"
+      ],
+      "target_paths": [
+        "openclaw_extensions/canvas"
+      ],
+      "file_count": 19,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/canvas"
+    },
+    {
+      "id": "P2-0197",
+      "phase": "phase-2-full",
+      "title": "移植 extension cerebras",
+      "source_paths": [
+        "extensions/cerebras"
+      ],
+      "target_paths": [
+        "openclaw_extensions/cerebras"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/cerebras"
+    },
+    {
+      "id": "P2-0198",
+      "phase": "phase-2-full",
+      "title": "移植 extension chutes",
+      "source_paths": [
+        "extensions/chutes"
+      ],
+      "target_paths": [
+        "openclaw_extensions/chutes"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/chutes"
+    },
+    {
+      "id": "P2-0199",
+      "phase": "phase-2-full",
+      "title": "移植 extension clickclack",
+      "source_paths": [
+        "extensions/clickclack"
+      ],
+      "target_paths": [
+        "openclaw_extensions/clickclack"
+      ],
+      "file_count": 16,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/clickclack"
+    },
+    {
+      "id": "P2-0200",
+      "phase": "phase-2-full",
+      "title": "移植 extension cloudflare-ai-gateway",
+      "source_paths": [
+        "extensions/cloudflare-ai-gateway"
+      ],
+      "target_paths": [
+        "openclaw_extensions/cloudflare-ai-gateway"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/cloudflare-ai-gateway"
+    },
+    {
+      "id": "P2-0201",
+      "phase": "phase-2-full",
+      "title": "移植 extension codex",
+      "source_paths": [
+        "extensions/codex"
+      ],
+      "target_paths": [
+        "openclaw_extensions/codex"
+      ],
+      "file_count": 116,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/codex"
+    },
+    {
+      "id": "P2-0202",
+      "phase": "phase-2-full",
+      "title": "移植 extension codex-supervisor",
+      "source_paths": [
+        "extensions/codex-supervisor"
+      ],
+      "target_paths": [
+        "openclaw_extensions/codex-supervisor"
+      ],
+      "file_count": 10,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/codex-supervisor"
+    },
+    {
+      "id": "P2-0203",
+      "phase": "phase-2-full",
+      "title": "移植 extension cohere",
+      "source_paths": [
+        "extensions/cohere"
+      ],
+      "target_paths": [
+        "openclaw_extensions/cohere"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/cohere"
+    },
+    {
+      "id": "P2-0204",
+      "phase": "phase-2-full",
+      "title": "移植 extension comfy",
+      "source_paths": [
+        "extensions/comfy"
+      ],
+      "target_paths": [
+        "openclaw_extensions/comfy"
+      ],
+      "file_count": 6,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/comfy"
+    },
+    {
+      "id": "P2-0205",
+      "phase": "phase-2-full",
+      "title": "移植 extension copilot",
+      "source_paths": [
+        "extensions/copilot"
+      ],
+      "target_paths": [
+        "openclaw_extensions/copilot"
+      ],
+      "file_count": 17,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/copilot"
+    },
+    {
+      "id": "P2-0206",
+      "phase": "phase-2-full",
+      "title": "移植 extension copilot-proxy",
+      "source_paths": [
+        "extensions/copilot-proxy"
+      ],
+      "target_paths": [
+        "openclaw_extensions/copilot-proxy"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/copilot-proxy"
+    },
+    {
+      "id": "P2-0207",
+      "phase": "phase-2-full",
+      "title": "移植 extension deepgram",
+      "source_paths": [
+        "extensions/deepgram"
+      ],
+      "target_paths": [
+        "openclaw_extensions/deepgram"
+      ],
+      "file_count": 5,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/deepgram"
+    },
+    {
+      "id": "P2-0208",
+      "phase": "phase-2-full",
+      "title": "移植 extension deepinfra",
+      "source_paths": [
+        "extensions/deepinfra"
+      ],
+      "target_paths": [
+        "openclaw_extensions/deepinfra"
+      ],
+      "file_count": 16,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/deepinfra"
+    },
+    {
+      "id": "P2-0209",
+      "phase": "phase-2-full",
+      "title": "移植 extension deepseek",
+      "source_paths": [
+        "extensions/deepseek"
+      ],
+      "target_paths": [
+        "openclaw_extensions/deepseek"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/deepseek"
+    },
+    {
+      "id": "P2-0210",
+      "phase": "phase-2-full",
+      "title": "移植 extension device-pair",
+      "source_paths": [
+        "extensions/device-pair"
+      ],
+      "target_paths": [
+        "openclaw_extensions/device-pair"
+      ],
+      "file_count": 8,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/device-pair"
+    },
+    {
+      "id": "P2-0211",
+      "phase": "phase-2-full",
+      "title": "移植 extension diagnostics-otel",
+      "source_paths": [
+        "extensions/diagnostics-otel"
+      ],
+      "target_paths": [
+        "openclaw_extensions/diagnostics-otel"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/diagnostics-otel"
+    },
+    {
+      "id": "P2-0212",
+      "phase": "phase-2-full",
+      "title": "移植 extension diagnostics-prometheus",
+      "source_paths": [
+        "extensions/diagnostics-prometheus"
+      ],
+      "target_paths": [
+        "openclaw_extensions/diagnostics-prometheus"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/diagnostics-prometheus"
+    },
+    {
+      "id": "P2-0213",
+      "phase": "phase-2-full",
+      "title": "移植 extension diffs",
+      "source_paths": [
+        "extensions/diffs"
+      ],
+      "target_paths": [
+        "openclaw_extensions/diffs"
+      ],
+      "file_count": 20,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/diffs"
+    },
+    {
+      "id": "P2-0214",
+      "phase": "phase-2-full",
+      "title": "移植 extension diffs-language-pack",
+      "source_paths": [
+        "extensions/diffs-language-pack"
+      ],
+      "target_paths": [
+        "openclaw_extensions/diffs-language-pack"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/diffs-language-pack"
+    },
+    {
+      "id": "P2-0215",
+      "phase": "phase-2-full",
+      "title": "移植 extension discord",
+      "source_paths": [
+        "extensions/discord"
+      ],
+      "target_paths": [
+        "openclaw_extensions/discord"
+      ],
+      "file_count": 374,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/discord"
+    },
+    {
+      "id": "P2-0216",
+      "phase": "phase-2-full",
+      "title": "移植 extension document-extract",
+      "source_paths": [
+        "extensions/document-extract"
+      ],
+      "target_paths": [
+        "openclaw_extensions/document-extract"
+      ],
+      "file_count": 2,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/document-extract"
+    },
+    {
+      "id": "P2-0217",
+      "phase": "phase-2-full",
+      "title": "移植 extension duckduckgo",
+      "source_paths": [
+        "extensions/duckduckgo"
+      ],
+      "target_paths": [
+        "openclaw_extensions/duckduckgo"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/duckduckgo"
+    },
+    {
+      "id": "P2-0218",
+      "phase": "phase-2-full",
+      "title": "移植 extension elevenlabs",
+      "source_paths": [
+        "extensions/elevenlabs"
+      ],
+      "target_paths": [
+        "openclaw_extensions/elevenlabs"
+      ],
+      "file_count": 12,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/elevenlabs"
+    },
+    {
+      "id": "P2-0219",
+      "phase": "phase-2-full",
+      "title": "移植 extension exa",
+      "source_paths": [
+        "extensions/exa"
+      ],
+      "target_paths": [
+        "openclaw_extensions/exa"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/exa"
+    },
+    {
+      "id": "P2-0220",
+      "phase": "phase-2-full",
+      "title": "移植 extension fal",
+      "source_paths": [
+        "extensions/fal"
+      ],
+      "target_paths": [
+        "openclaw_extensions/fal"
+      ],
+      "file_count": 9,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/fal"
+    },
+    {
+      "id": "P2-0221",
+      "phase": "phase-2-full",
+      "title": "移植 extension feishu",
+      "source_paths": [
+        "extensions/feishu"
+      ],
+      "target_paths": [
+        "openclaw_extensions/feishu"
+      ],
+      "file_count": 131,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/feishu"
+    },
+    {
+      "id": "P2-0222",
+      "phase": "phase-2-full",
+      "title": "移植 extension file-transfer",
+      "source_paths": [
+        "extensions/file-transfer"
+      ],
+      "target_paths": [
+        "openclaw_extensions/file-transfer"
+      ],
+      "file_count": 20,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/file-transfer"
+    },
+    {
+      "id": "P2-0223",
+      "phase": "phase-2-full",
+      "title": "移植 extension firecrawl",
+      "source_paths": [
+        "extensions/firecrawl"
+      ],
+      "target_paths": [
+        "openclaw_extensions/firecrawl"
+      ],
+      "file_count": 14,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/firecrawl"
+    },
+    {
+      "id": "P2-0224",
+      "phase": "phase-2-full",
+      "title": "移植 extension fireworks",
+      "source_paths": [
+        "extensions/fireworks"
+      ],
+      "target_paths": [
+        "openclaw_extensions/fireworks"
+      ],
+      "file_count": 7,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/fireworks"
+    },
+    {
+      "id": "P2-0225",
+      "phase": "phase-2-full",
+      "title": "移植 extension github-copilot",
+      "source_paths": [
+        "extensions/github-copilot"
+      ],
+      "target_paths": [
+        "openclaw_extensions/github-copilot"
+      ],
+      "file_count": 15,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/github-copilot"
+    },
+    {
+      "id": "P2-0226",
+      "phase": "phase-2-full",
+      "title": "移植 extension gmi",
+      "source_paths": [
+        "extensions/gmi"
+      ],
+      "target_paths": [
+        "openclaw_extensions/gmi"
+      ],
+      "file_count": 3,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/gmi"
+    },
+    {
+      "id": "P2-0227",
+      "phase": "phase-2-full",
+      "title": "移植 extension google",
+      "source_paths": [
+        "extensions/google"
+      ],
+      "target_paths": [
+        "openclaw_extensions/google"
+      ],
+      "file_count": 51,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/google"
+    },
+    {
+      "id": "P2-0228",
+      "phase": "phase-2-full",
+      "title": "移植 extension google-meet",
+      "source_paths": [
+        "extensions/google-meet"
+      ],
+      "target_paths": [
+        "openclaw_extensions/google-meet"
+      ],
+      "file_count": 25,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/google-meet"
+    },
+    {
+      "id": "P2-0229",
+      "phase": "phase-2-full",
+      "title": "移植 extension googlechat",
+      "source_paths": [
+        "extensions/googlechat"
+      ],
+      "target_paths": [
+        "openclaw_extensions/googlechat"
+      ],
+      "file_count": 47,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/googlechat"
+    },
+    {
+      "id": "P2-0230",
+      "phase": "phase-2-full",
+      "title": "移植 extension gradium",
+      "source_paths": [
+        "extensions/gradium"
+      ],
+      "target_paths": [
+        "openclaw_extensions/gradium"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/gradium"
+    },
+    {
+      "id": "P2-0231",
+      "phase": "phase-2-full",
+      "title": "移植 extension groq",
+      "source_paths": [
+        "extensions/groq"
+      ],
+      "target_paths": [
+        "openclaw_extensions/groq"
+      ],
+      "file_count": 4,
+      "status": "pending",
+      "acceptance": "pytest passes for openclaw_extensions/groq"
+    }
+  ],
+  "notes": "Phase-2 auto-generated from src/, packages/, and first 50 extensions."
+}
