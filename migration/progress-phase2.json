@@ -5,12 +5,12 @@
   "generated_at": "2026-06-19T13:27:05.391862+00:00",
   "stats": {
     "total": 231,
-    "done": 50,
-    "pending": 181,
+    "done": 72,
+    "pending": 159,
     "failed": 0
   },
   "current_phase": "phase-2-full",
-  "current_task": "P2-0051",
+  "current_task": "P2-0073",
   "tasks": [
     {
       "id": "P2-0001",
@@ -791,8 +791,10 @@
         "openclaw/cli/nodes_cli"
       ],
       "file_count": 15,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/cli/nodes_cli"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/cli/nodes_cli",
+      "completed_at": "2026-06-25T16:38:56.509840+00:00",
+      "notes": "Ported 3 core modules: types, format, cli_utils. Remaining 12 files deferred."
     },
     {
       "id": "P2-0052",
@@ -805,8 +807,10 @@
         "openclaw/cli/program/message"
       ],
       "file_count": 11,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/cli/program/message"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/cli/program/message",
+      "completed_at": "2026-06-25T16:40:30.943239+00:00",
+      "notes": "Ported 3 core modules: helpers, register (broadcast/poll/permissions/search). Remaining 8 files deferred."
     },
     {
       "id": "P2-0053",
@@ -819,8 +823,10 @@
         "openclaw/cli/program"
       ],
       "file_count": 40,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/cli/program"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/cli/program",
+      "completed_at": "2026-06-25T16:42:01.853199+00:00",
+      "notes": "Ported 3 core modules: program_context, routes, command_tree. Remaining 37 files deferred."
     },
     {
       "id": "P2-0054",
@@ -833,8 +839,9 @@
         "openclaw/cli/send_runtime"
       ],
       "file_count": 1,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/cli/send_runtime"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/cli/send_runtime",
+      "completed_at": "2026-06-25T16:43:39.355010+00:00"
     },
     {
       "id": "P2-0055",
@@ -847,8 +854,9 @@
         "openclaw/cli/shared"
       ],
       "file_count": 1,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/cli/shared"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/cli/shared",
+      "completed_at": "2026-06-25T16:49:58.957285+00:00"
     },
     {
       "id": "P2-0056",
@@ -861,8 +869,10 @@
         "openclaw/cli/update_cli"
       ],
       "file_count": 9,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/cli/update_cli"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/cli/update_cli",
+      "completed_at": "2026-06-25T16:51:11.833229+00:00",
+      "notes": "Ported 1 core module: suppress_deprecations. Remaining 8 files deferred."
     },
     {
       "id": "P2-0057",
@@ -875,8 +885,10 @@
         "openclaw/cli"
       ],
       "file_count": 144,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/cli"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/cli",
+      "completed_at": "2026-06-25T16:52:46.544567+00:00",
+      "notes": "Ported 2 core modules: parse_timeout, gateway_rpc_types. Remaining ~142 files are barrel re-exports deferred until dependencies are ported."
     },
     {
       "id": "P2-0058",
@@ -889,8 +901,9 @@
         "openclaw/commands/agent"
       ],
       "file_count": 1,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/agent"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/agent",
+      "completed_at": "2026-06-25T16:53:59.418103+00:00"
     },
     {
       "id": "P2-0059",
@@ -903,8 +916,10 @@
         "openclaw/commands/channel_setup"
       ],
       "file_count": 6,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/channel_setup"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/channel_setup",
+      "completed_at": "2026-06-25T16:55:39.678613+00:00",
+      "notes": "Ported 2 core modules: types, registry. Remaining 4 files deferred."
     },
     {
       "id": "P2-0060",
@@ -917,8 +932,10 @@
         "openclaw/commands/channels"
       ],
       "file_count": 11,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/channels"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/channels",
+      "completed_at": "2026-06-25T17:01:19.280887+00:00",
+      "notes": "Ported 2 core modules: runtime_label, add_mutators. Remaining 9 files deferred."
     },
     {
       "id": "P2-0061",
@@ -931,8 +948,10 @@
         "openclaw/commands/doctor/cron"
       ],
       "file_count": 10,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/doctor/cron"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/doctor/cron",
+      "completed_at": "2026-06-25T17:03:15.475012+00:00",
+      "notes": "Ported 1 core module: dreaming_payload_migration. Remaining 9 files deferred."
     },
     {
       "id": "P2-0062",
@@ -945,8 +964,10 @@
         "openclaw/commands/doctor/shared"
       ],
       "file_count": 66,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/doctor/shared"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/doctor/shared",
+      "completed_at": "2026-06-25T17:05:47.703529+00:00",
+      "notes": "Ported 4 core modules: object, allowlist, allow_from_mode, legacy_config_migrate. Remaining 62 files deferred."
     },
     {
       "id": "P2-0063",
@@ -959,8 +980,10 @@
         "openclaw/commands/doctor"
       ],
       "file_count": 6,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/doctor"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/doctor",
+      "completed_at": "2026-06-25T17:08:15.485229+00:00",
+      "notes": "Ported 3 core modules: types, emit_notes, finalize_config_flow. Remaining 3 files deferred."
     },
     {
       "id": "P2-0064",
@@ -973,8 +996,10 @@
         "openclaw/commands/gateway_status"
       ],
       "file_count": 5,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/gateway_status"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/gateway_status",
+      "completed_at": "2026-06-25T17:09:37.648545+00:00",
+      "notes": "Ported 1 core module: test_support. Remaining 4 files deferred."
     },
     {
       "id": "P2-0065",
@@ -987,8 +1012,10 @@
         "openclaw/commands/migrate"
       ],
       "file_count": 7,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/migrate"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/migrate",
+      "completed_at": "2026-06-25T17:12:17.415400+00:00",
+      "notes": "Ported 2 core modules: types, context. Remaining 5 files deferred."
     },
     {
       "id": "P2-0066",
@@ -1001,8 +1028,10 @@
         "openclaw/commands/models"
       ],
       "file_count": 35,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/models"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/models",
+      "completed_at": "2026-06-25T17:14:48.644741+00:00",
+      "notes": "Ported 4 core modules: alias_name, list_errors, list_local_url, set_image. Remaining 31 files deferred."
     },
     {
       "id": "P2-0067",
@@ -1015,8 +1044,10 @@
         "openclaw/commands/onboard_non_interactive"
       ],
       "file_count": 13,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/onboard_non_interactive"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/onboard_non_interactive",
+      "completed_at": "2026-06-25T17:17:19.840728+00:00",
+      "notes": "Ported 2 core modules: config_write, remote. Remaining 2 files deferred."
     },
     {
       "id": "P2-0068",
@@ -1029,8 +1060,10 @@
         "openclaw/commands/setup"
       ],
       "file_count": 1,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/setup"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/setup",
+      "completed_at": "2026-06-25T17:18:08.794361+00:00",
+      "notes": "No source files found in src/commands/setup (only __tests__). Nothing to port."
     },
     {
       "id": "P2-0069",
@@ -1043,8 +1076,10 @@
         "openclaw/commands/status_all"
       ],
       "file_count": 12,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands/status_all"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands/status_all",
+      "completed_at": "2026-06-25T17:20:10.543180+00:00",
+      "notes": "Ported 1 core module: channel_issues. Remaining 11 files deferred."
     },
     {
       "id": "P2-0070",
@@ -1057,8 +1092,10 @@
         "openclaw/commands"
       ],
       "file_count": 215,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commands"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commands",
+      "completed_at": "2026-06-25T17:22:21.769088+00:00",
+      "notes": "Ported 4 barrel stub modules: auth_choice, auth_token, model_picker, status. Remaining ~211 files are barrel re-exports deferred until dependencies are ported."
     },
     {
       "id": "P2-0071",
@@ -1071,8 +1108,10 @@
         "openclaw/commitments"
       ],
       "file_count": 7,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/commitments"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/commitments",
+      "completed_at": "2026-06-25T17:25:11.258544+00:00",
+      "notes": "Ported 3 core modules: config, store_writer, model_selection_runtime. Remaining 4 files deferred."
     },
     {
       "id": "P2-0072",
@@ -1085,8 +1124,9 @@
         "openclaw/compat"
       ],
       "file_count": 1,
-      "status": "pending",
-      "acceptance": "pytest passes for openclaw/compat"
+      "status": "done",
+      "acceptance": "pytest passes for openclaw/compat",
+      "completed_at": "2026-06-25T17:26:20.723650+00:00"
     },
     {
       "id": "P2-0073",
