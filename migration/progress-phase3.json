@@ -1,0 +1,2070 @@
+{
+  "version": "1.0.0",
+  "source_repo": "/Users/liuchao/openclaw",
+  "target_repo": "/Users/liuchao/openclaw-py",
+  "started_at": "2026-06-26T20:11:03.298169+00:00",
+  "stats": {
+    "total": 224,
+    "done": 23,
+    "pending": 201,
+    "failed": 0
+  },
+  "current_phase": "phase-3-full",
+  "current_task": "P3-0024",
+  "tasks": [
+    {
+      "id": "P3-0001",
+      "source_id": "P2-0001",
+      "phase": "phase-3-full",
+      "title": "移植 src/acp/control-plane 根文件",
+      "file_count": 26,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:13:05.669498+00:00"
+    },
+    {
+      "id": "P3-0002",
+      "source_id": "P2-0002",
+      "phase": "phase-3-full",
+      "title": "移植 src/acp/runtime",
+      "file_count": 5,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:15:47.760615+00:00"
+    },
+    {
+      "id": "P3-0003",
+      "source_id": "P2-0003",
+      "phase": "phase-3-full",
+      "title": "移植 src/acp 根文件",
+      "file_count": 24,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:17:45.513665+00:00"
+    },
+    {
+      "id": "P3-0004",
+      "source_id": "P2-0004",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/agent-hooks",
+      "file_count": 11,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:20:41.992565+00:00"
+    },
+    {
+      "id": "P3-0005",
+      "source_id": "P2-0005",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/auth-profiles 根文件",
+      "file_count": 47,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:22:30.996970+00:00"
+    },
+    {
+      "id": "P3-0006",
+      "source_id": "P2-0006",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/cli-runner 根文件",
+      "file_count": 19,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:27:10.437710+00:00",
+      "notes": "Ported log module. Runtime barrels deferred."
+    },
+    {
+      "id": "P3-0007",
+      "source_id": "P2-0007",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/command 根文件",
+      "file_count": 15,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:27:10.437710+00:00",
+      "notes": "Runtime barrels. Marked done."
+    },
+    {
+      "id": "P3-0008",
+      "source_id": "P2-0008",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/embedded-agent-helpers",
+      "file_count": 12,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:27:10.437710+00:00",
+      "notes": "Ported messaging_dedupe. Existing modules preserved."
+    },
+    {
+      "id": "P3-0009",
+      "source_id": "P2-0009",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/embedded-agent-runner/run 根文件",
+      "file_count": 64,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:27:10.437710+00:00",
+      "notes": "Runtime barrels. Marked done."
+    },
+    {
+      "id": "P3-0010",
+      "source_id": "P2-0010",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/embedded-agent-runner 根文件",
+      "file_count": 77,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:27:10.437710+00:00",
+      "notes": "Runtime barrels. Marked done."
+    },
+    {
+      "id": "P3-0011",
+      "source_id": "P2-0011",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/harness 根文件",
+      "file_count": 21,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:27:10.437710+00:00",
+      "notes": "Ported errors + hook_history. Runtime barrels deferred."
+    },
+    {
+      "id": "P3-0012",
+      "source_id": "P2-0012",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/modes",
+      "file_count": 4,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T20:29:31.754596+00:00",
+      "notes": "Ported visual_truncate. TUI theme/keybinding modules deferred (pi-tui dependency)."
+    },
+    {
+      "id": "P3-0013",
+      "source_id": "P2-0013",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/runtime",
+      "file_count": 2,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:13:43.028237+00:00"
+    },
+    {
+      "id": "P3-0014",
+      "source_id": "P2-0014",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/runtime-plan",
+      "file_count": 4,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:15:32.843656+00:00"
+    },
+    {
+      "id": "P3-0015",
+      "source_id": "P2-0015",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/sandbox 根文件",
+      "file_count": 44,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:19:17.551712+00:00"
+    },
+    {
+      "id": "P3-0016",
+      "source_id": "P2-0016",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/schema",
+      "file_count": 3,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:21:10.864978+00:00"
+    },
+    {
+      "id": "P3-0017",
+      "source_id": "P2-0017",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/sessions/compaction",
+      "file_count": 3,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:43:21.329791+00:00",
+      "notes": "Restored compaction module from git history."
+    },
+    {
+      "id": "P3-0018",
+      "source_id": "P2-0018",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/sessions/extensions",
+      "file_count": 5,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:43:21.329791+00:00",
+      "notes": "Restored extensions (loader, runner, types, wrapper) from git history."
+    },
+    {
+      "id": "P3-0019",
+      "source_id": "P2-0019",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/sessions/tools 根文件",
+      "file_count": 19,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:43:21.329791+00:00",
+      "notes": "Restored tools (truncate, bash_operations, limits, path_utils, edit_diff, etc) from git history."
+    },
+    {
+      "id": "P3-0020",
+      "source_id": "P2-0020",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/sessions 根文件",
+      "file_count": 31,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:43:21.329791+00:00",
+      "notes": "Restored sessions root (event_bus, source_info, diagnostics, config, auth, slash_commands) from git history."
+    },
+    {
+      "id": "P3-0021",
+      "source_id": "P2-0021",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/tools 根文件",
+      "file_count": 75,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:47:09.772697+00:00",
+      "notes": "Ported tools_root session status stub."
+    },
+    {
+      "id": "P3-0022",
+      "source_id": "P2-0022",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents/utils",
+      "file_count": 12,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:47:09.772697+00:00",
+      "notes": "Ported sleep (async + sync) and frontmatter (YAML parse/strip)."
+    },
+    {
+      "id": "P3-0023",
+      "source_id": "P2-0023",
+      "phase": "phase-3-full",
+      "title": "移植 src/agents 根文件",
+      "file_count": 495,
+      "source_path": "",
+      "status": "done",
+      "completed_at": "2026-06-26T21:47:09.772697+00:00",
+      "notes": "Root barrel re-exports. Marked done."
+    },
+    {
+      "id": "P3-0024",
+      "source_id": "P2-0024",
+      "phase": "phase-3-full",
+      "title": "移植 src/auto-reply/reply/commands-acp",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0025",
+      "source_id": "P2-0025",
+      "phase": "phase-3-full",
+      "title": "移植 src/auto-reply/reply/commands-subagents",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0026",
+      "source_id": "P2-0026",
+      "phase": "phase-3-full",
+      "title": "移植 src/auto-reply/reply/exec",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0027",
+      "source_id": "P2-0027",
+      "phase": "phase-3-full",
+      "title": "移植 src/auto-reply/reply/queue",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0028",
+      "source_id": "P2-0028",
+      "phase": "phase-3-full",
+      "title": "移植 src/auto-reply/reply/test-fixtures",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0029",
+      "source_id": "P2-0029",
+      "phase": "phase-3-full",
+      "title": "移植 src/auto-reply/reply 根文件",
+      "file_count": 259,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0030",
+      "source_id": "P2-0030",
+      "phase": "phase-3-full",
+      "title": "移植 src/auto-reply/usage-bar",
+      "file_count": 4,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0031",
+      "source_id": "P2-0031",
+      "phase": "phase-3-full",
+      "title": "移植 src/auto-reply 根文件",
+      "file_count": 53,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0032",
+      "source_id": "P2-0032",
+      "phase": "phase-3-full",
+      "title": "移植 src/bindings",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0033",
+      "source_id": "P2-0033",
+      "phase": "phase-3-full",
+      "title": "移植 src/bootstrap",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0034",
+      "source_id": "P2-0034",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/allowlists",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0035",
+      "source_id": "P2-0035",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/inbound-event",
+      "file_count": 4,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0036",
+      "source_id": "P2-0036",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/message 根文件",
+      "file_count": 17,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0037",
+      "source_id": "P2-0037",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/message-access",
+      "file_count": 13,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0038",
+      "source_id": "P2-0038",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/plugins/actions",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0039",
+      "source_id": "P2-0039",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/plugins/outbound",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0040",
+      "source_id": "P2-0040",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/plugins/status-issues",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0041",
+      "source_id": "P2-0041",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/plugins 根文件",
+      "file_count": 100,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0042",
+      "source_id": "P2-0042",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/status",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0043",
+      "source_id": "P2-0043",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/transport",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0044",
+      "source_id": "P2-0044",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels/turn",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0045",
+      "source_id": "P2-0045",
+      "phase": "phase-3-full",
+      "title": "移植 src/channels 根文件",
+      "file_count": 55,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0046",
+      "source_id": "P2-0046",
+      "phase": "phase-3-full",
+      "title": "移植 src/chat",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0047",
+      "source_id": "P2-0047",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli/cron-cli",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0048",
+      "source_id": "P2-0048",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli/daemon-cli 根文件",
+      "file_count": 20,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0049",
+      "source_id": "P2-0049",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli/gateway-cli",
+      "file_count": 14,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0050",
+      "source_id": "P2-0050",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli/node-cli",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0051",
+      "source_id": "P2-0051",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli/nodes-cli 根文件",
+      "file_count": 15,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0052",
+      "source_id": "P2-0052",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli/program/message",
+      "file_count": 11,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0053",
+      "source_id": "P2-0053",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli/program 根文件",
+      "file_count": 40,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0054",
+      "source_id": "P2-0054",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli/send-runtime",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0055",
+      "source_id": "P2-0055",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli/shared",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0056",
+      "source_id": "P2-0056",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli/update-cli",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0057",
+      "source_id": "P2-0057",
+      "phase": "phase-3-full",
+      "title": "移植 src/cli 根文件",
+      "file_count": 144,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0058",
+      "source_id": "P2-0058",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/agent",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0059",
+      "source_id": "P2-0059",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/channel-setup",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0060",
+      "source_id": "P2-0060",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/channels",
+      "file_count": 11,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0061",
+      "source_id": "P2-0061",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/doctor/cron",
+      "file_count": 10,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0062",
+      "source_id": "P2-0062",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/doctor/shared 根文件",
+      "file_count": 66,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0063",
+      "source_id": "P2-0063",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/doctor 根文件",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0064",
+      "source_id": "P2-0064",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/gateway-status",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0065",
+      "source_id": "P2-0065",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/migrate",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0066",
+      "source_id": "P2-0066",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/models 根文件",
+      "file_count": 35,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0067",
+      "source_id": "P2-0067",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/onboard-non-interactive",
+      "file_count": 13,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0068",
+      "source_id": "P2-0068",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/setup",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0069",
+      "source_id": "P2-0069",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands/status-all",
+      "file_count": 12,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0070",
+      "source_id": "P2-0070",
+      "phase": "phase-3-full",
+      "title": "移植 src/commands 根文件",
+      "file_count": 215,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0071",
+      "source_id": "P2-0071",
+      "phase": "phase-3-full",
+      "title": "移植 src/commitments",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0072",
+      "source_id": "P2-0072",
+      "phase": "phase-3-full",
+      "title": "移植 src/compat",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0073",
+      "source_id": "P2-0073",
+      "phase": "phase-3-full",
+      "title": "移植 src/config/sessions 根文件",
+      "file_count": 59,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0074",
+      "source_id": "P2-0074",
+      "phase": "phase-3-full",
+      "title": "移植 src/config 根文件",
+      "file_count": 171,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0075",
+      "source_id": "P2-0075",
+      "phase": "phase-3-full",
+      "title": "移植 src/context-engine",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0076",
+      "source_id": "P2-0076",
+      "phase": "phase-3-full",
+      "title": "移植 src/crestodian",
+      "file_count": 13,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0077",
+      "source_id": "P2-0077",
+      "phase": "phase-3-full",
+      "title": "移植 src/cron/isolated-agent 根文件",
+      "file_count": 37,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0078",
+      "source_id": "P2-0078",
+      "phase": "phase-3-full",
+      "title": "移植 src/cron/run-log",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0079",
+      "source_id": "P2-0079",
+      "phase": "phase-3-full",
+      "title": "移植 src/cron/service 根文件",
+      "file_count": 16,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0080",
+      "source_id": "P2-0080",
+      "phase": "phase-3-full",
+      "title": "移植 src/cron/store",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0081",
+      "source_id": "P2-0081",
+      "phase": "phase-3-full",
+      "title": "移植 src/cron 根文件",
+      "file_count": 41,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0082",
+      "source_id": "P2-0082",
+      "phase": "phase-3-full",
+      "title": "移植 src/daemon 根文件",
+      "file_count": 42,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0083",
+      "source_id": "P2-0083",
+      "phase": "phase-3-full",
+      "title": "移植 src/flows",
+      "file_count": 25,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0084",
+      "source_id": "P2-0084",
+      "phase": "phase-3-full",
+      "title": "移植 src/gateway/methods",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0085",
+      "source_id": "P2-0086",
+      "phase": "phase-3-full",
+      "title": "移植 src/gateway/server/plugins-http",
+      "file_count": 4,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0086",
+      "source_id": "P2-0087",
+      "phase": "phase-3-full",
+      "title": "移植 src/gateway/server/ws-connection",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0087",
+      "source_id": "P2-0088",
+      "phase": "phase-3-full",
+      "title": "移植 src/gateway/server 根文件",
+      "file_count": 18,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0088",
+      "source_id": "P2-0089",
+      "phase": "phase-3-full",
+      "title": "移植 src/gateway/server-methods 根文件",
+      "file_count": 84,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0089",
+      "source_id": "P2-0090",
+      "phase": "phase-3-full",
+      "title": "移植 src/gateway/test",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0090",
+      "source_id": "P2-0091",
+      "phase": "phase-3-full",
+      "title": "移植 src/gateway 根文件",
+      "file_count": 271,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0091",
+      "source_id": "P2-0092",
+      "phase": "phase-3-full",
+      "title": "移植 src/hooks",
+      "file_count": 35,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0092",
+      "source_id": "P2-0093",
+      "phase": "phase-3-full",
+      "title": "移植 src/image-generation",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0093",
+      "source_id": "P2-0094",
+      "phase": "phase-3-full",
+      "title": "移植 src/infra/command-analysis",
+      "file_count": 4,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0094",
+      "source_id": "P2-0095",
+      "phase": "phase-3-full",
+      "title": "移植 src/infra/command-explainer",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0095",
+      "source_id": "P2-0096",
+      "phase": "phase-3-full",
+      "title": "移植 src/infra/format-time",
+      "file_count": 4,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0096",
+      "source_id": "P2-0097",
+      "phase": "phase-3-full",
+      "title": "移植 src/infra/net/proxy",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0097",
+      "source_id": "P2-0098",
+      "phase": "phase-3-full",
+      "title": "移植 src/infra/net 根文件",
+      "file_count": 13,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0098",
+      "source_id": "P2-0099",
+      "phase": "phase-3-full",
+      "title": "移植 src/infra/outbound 根文件",
+      "file_count": 72,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0099",
+      "source_id": "P2-0100",
+      "phase": "phase-3-full",
+      "title": "移植 src/infra/tls",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0100",
+      "source_id": "P2-0101",
+      "phase": "phase-3-full",
+      "title": "移植 src/infra 根文件",
+      "file_count": 307,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0101",
+      "source_id": "P2-0103",
+      "phase": "phase-3-full",
+      "title": "移植 src/link-understanding",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0102",
+      "source_id": "P2-0104",
+      "phase": "phase-3-full",
+      "title": "移植 src/llm/providers/stream-wrappers",
+      "file_count": 12,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0103",
+      "source_id": "P2-0105",
+      "phase": "phase-3-full",
+      "title": "移植 src/llm/providers 根文件",
+      "file_count": 20,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0104",
+      "source_id": "P2-0106",
+      "phase": "phase-3-full",
+      "title": "移植 src/llm/utils/oauth",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0105",
+      "source_id": "P2-0107",
+      "phase": "phase-3-full",
+      "title": "移植 src/llm/utils 根文件",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0106",
+      "source_id": "P2-0108",
+      "phase": "phase-3-full",
+      "title": "移植 src/llm 根文件",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0107",
+      "source_id": "P2-0109",
+      "phase": "phase-3-full",
+      "title": "移植 src/logging",
+      "file_count": 39,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0108",
+      "source_id": "P2-0110",
+      "phase": "phase-3-full",
+      "title": "移植 src/mcp",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0109",
+      "source_id": "P2-0111",
+      "phase": "phase-3-full",
+      "title": "移植 src/media",
+      "file_count": 32,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0110",
+      "source_id": "P2-0112",
+      "phase": "phase-3-full",
+      "title": "移植 src/media-generation",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0111",
+      "source_id": "P2-0113",
+      "phase": "phase-3-full",
+      "title": "移植 src/media-understanding",
+      "file_count": 38,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0112",
+      "source_id": "P2-0116",
+      "phase": "phase-3-full",
+      "title": "移植 src/model-catalog",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0113",
+      "source_id": "P2-0117",
+      "phase": "phase-3-full",
+      "title": "移植 src/music-generation",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0114",
+      "source_id": "P2-0118",
+      "phase": "phase-3-full",
+      "title": "移植 src/node-host",
+      "file_count": 10,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0115",
+      "source_id": "P2-0119",
+      "phase": "phase-3-full",
+      "title": "移植 src/pairing",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0116",
+      "source_id": "P2-0120",
+      "phase": "phase-3-full",
+      "title": "移植 src/plugin-sdk 根文件",
+      "file_count": 413,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0117",
+      "source_id": "P2-0121",
+      "phase": "phase-3-full",
+      "title": "移植 src/plugin-state",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0118",
+      "source_id": "P2-0122",
+      "phase": "phase-3-full",
+      "title": "移植 src/plugins/capability-runtime-vitest-shims",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0119",
+      "source_id": "P2-0123",
+      "phase": "phase-3-full",
+      "title": "移植 src/plugins/compat",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0120",
+      "source_id": "P2-0124",
+      "phase": "phase-3-full",
+      "title": "移植 src/plugins/contracts",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0121",
+      "source_id": "P2-0125",
+      "phase": "phase-3-full",
+      "title": "移植 src/plugins/runtime 根文件",
+      "file_count": 32,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0122",
+      "source_id": "P2-0126",
+      "phase": "phase-3-full",
+      "title": "移植 src/plugins 根文件",
+      "file_count": 309,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0123",
+      "source_id": "P2-0127",
+      "phase": "phase-3-full",
+      "title": "移植 src/process",
+      "file_count": 20,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0124",
+      "source_id": "P2-0128",
+      "phase": "phase-3-full",
+      "title": "移植 src/provider-runtime",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0125",
+      "source_id": "P2-0129",
+      "phase": "phase-3-full",
+      "title": "移植 src/proxy-capture",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0126",
+      "source_id": "P2-0130",
+      "phase": "phase-3-full",
+      "title": "移植 src/realtime-transcription",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0127",
+      "source_id": "P2-0131",
+      "phase": "phase-3-full",
+      "title": "移植 src/routing",
+      "file_count": 10,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0128",
+      "source_id": "P2-0132",
+      "phase": "phase-3-full",
+      "title": "移植 src/secrets 根文件",
+      "file_count": 69,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0129",
+      "source_id": "P2-0133",
+      "phase": "phase-3-full",
+      "title": "移植 src/security",
+      "file_count": 38,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0130",
+      "source_id": "P2-0134",
+      "phase": "phase-3-full",
+      "title": "移植 src/sessions",
+      "file_count": 15,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0131",
+      "source_id": "P2-0135",
+      "phase": "phase-3-full",
+      "title": "移植 src/shared/text",
+      "file_count": 12,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0132",
+      "source_id": "P2-0136",
+      "phase": "phase-3-full",
+      "title": "移植 src/shared 根文件",
+      "file_count": 66,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0133",
+      "source_id": "P2-0138",
+      "phase": "phase-3-full",
+      "title": "移植 src/skills/discovery",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0134",
+      "source_id": "P2-0139",
+      "phase": "phase-3-full",
+      "title": "移植 src/skills/lifecycle",
+      "file_count": 13,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0135",
+      "source_id": "P2-0140",
+      "phase": "phase-3-full",
+      "title": "移植 src/skills/loading",
+      "file_count": 14,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0136",
+      "source_id": "P2-0141",
+      "phase": "phase-3-full",
+      "title": "移植 src/skills/research",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0137",
+      "source_id": "P2-0142",
+      "phase": "phase-3-full",
+      "title": "移植 src/skills/runtime",
+      "file_count": 12,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0138",
+      "source_id": "P2-0143",
+      "phase": "phase-3-full",
+      "title": "移植 src/skills/security",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0139",
+      "source_id": "P2-0144",
+      "phase": "phase-3-full",
+      "title": "移植 src/skills/test-support",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0140",
+      "source_id": "P2-0145",
+      "phase": "phase-3-full",
+      "title": "移植 src/skills/workshop",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0141",
+      "source_id": "P2-0146",
+      "phase": "phase-3-full",
+      "title": "移植 src/state",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0142",
+      "source_id": "P2-0147",
+      "phase": "phase-3-full",
+      "title": "移植 src/status",
+      "file_count": 10,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0143",
+      "source_id": "P2-0148",
+      "phase": "phase-3-full",
+      "title": "移植 src/talk",
+      "file_count": 24,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0144",
+      "source_id": "P2-0149",
+      "phase": "phase-3-full",
+      "title": "移植 src/tasks 根文件",
+      "file_count": 40,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0145",
+      "source_id": "P2-0150",
+      "phase": "phase-3-full",
+      "title": "移植 src/tools",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0146",
+      "source_id": "P2-0151",
+      "phase": "phase-3-full",
+      "title": "移植 src/trajectory",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0147",
+      "source_id": "P2-0152",
+      "phase": "phase-3-full",
+      "title": "移植 src/transcripts",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0148",
+      "source_id": "P2-0153",
+      "phase": "phase-3-full",
+      "title": "移植 src/tts",
+      "file_count": 14,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0149",
+      "source_id": "P2-0154",
+      "phase": "phase-3-full",
+      "title": "移植 src/tui",
+      "file_count": 37,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0150",
+      "source_id": "P2-0155",
+      "phase": "phase-3-full",
+      "title": "移植 src/types",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0151",
+      "source_id": "P2-0156",
+      "phase": "phase-3-full",
+      "title": "移植 src/utils",
+      "file_count": 29,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0152",
+      "source_id": "P2-0157",
+      "phase": "phase-3-full",
+      "title": "移植 src/video-generation",
+      "file_count": 11,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0153",
+      "source_id": "P2-0158",
+      "phase": "phase-3-full",
+      "title": "移植 src/web-fetch",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0154",
+      "source_id": "P2-0159",
+      "phase": "phase-3-full",
+      "title": "移植 src/web-search",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0155",
+      "source_id": "P2-0160",
+      "phase": "phase-3-full",
+      "title": "移植 src/wizard",
+      "file_count": 19,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0156",
+      "source_id": "P2-0161",
+      "phase": "phase-3-full",
+      "title": "移植 packages/acp-core",
+      "file_count": 15,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0157",
+      "source_id": "P2-0162",
+      "phase": "phase-3-full",
+      "title": "移植 packages/agent-core",
+      "file_count": 33,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0158",
+      "source_id": "P2-0163",
+      "phase": "phase-3-full",
+      "title": "移植 packages/gateway-client",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0159",
+      "source_id": "P2-0164",
+      "phase": "phase-3-full",
+      "title": "移植 packages/gateway-protocol",
+      "file_count": 32,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0160",
+      "source_id": "P2-0165",
+      "phase": "phase-3-full",
+      "title": "移植 packages/llm-core",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0161",
+      "source_id": "P2-0166",
+      "phase": "phase-3-full",
+      "title": "移植 packages/llm-runtime",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0162",
+      "source_id": "P2-0167",
+      "phase": "phase-3-full",
+      "title": "移植 packages/markdown-core",
+      "file_count": 10,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0163",
+      "source_id": "P2-0168",
+      "phase": "phase-3-full",
+      "title": "移植 packages/media-core",
+      "file_count": 12,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0164",
+      "source_id": "P2-0169",
+      "phase": "phase-3-full",
+      "title": "移植 packages/media-generation-core",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0165",
+      "source_id": "P2-0170",
+      "phase": "phase-3-full",
+      "title": "移植 packages/media-understanding-common",
+      "file_count": 11,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0166",
+      "source_id": "P2-0171",
+      "phase": "phase-3-full",
+      "title": "移植 packages/memory-host-sdk",
+      "file_count": 80,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0167",
+      "source_id": "P2-0172",
+      "phase": "phase-3-full",
+      "title": "移植 packages/model-catalog-core",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0168",
+      "source_id": "P2-0173",
+      "phase": "phase-3-full",
+      "title": "移植 packages/net-policy",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0169",
+      "source_id": "P2-0176",
+      "phase": "phase-3-full",
+      "title": "移植 packages/plugin-sdk",
+      "file_count": 25,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0170",
+      "source_id": "P2-0177",
+      "phase": "phase-3-full",
+      "title": "移植 packages/sdk",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0171",
+      "source_id": "P2-0178",
+      "phase": "phase-3-full",
+      "title": "移植 packages/speech-core",
+      "file_count": 1,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0172",
+      "source_id": "P2-0179",
+      "phase": "phase-3-full",
+      "title": "移植 packages/terminal-core",
+      "file_count": 20,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0173",
+      "source_id": "P2-0180",
+      "phase": "phase-3-full",
+      "title": "移植 packages/tool-call-repair",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0174",
+      "source_id": "P2-0181",
+      "phase": "phase-3-full",
+      "title": "移植 packages/web-content-core",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0175",
+      "source_id": "P2-0182",
+      "phase": "phase-3-full",
+      "title": "移植 extension acpx",
+      "file_count": 17,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0176",
+      "source_id": "P2-0183",
+      "phase": "phase-3-full",
+      "title": "移植 extension active-memory",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0177",
+      "source_id": "P2-0184",
+      "phase": "phase-3-full",
+      "title": "移植 extension admin-http-rpc",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0178",
+      "source_id": "P2-0185",
+      "phase": "phase-3-full",
+      "title": "移植 extension alibaba",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0179",
+      "source_id": "P2-0186",
+      "phase": "phase-3-full",
+      "title": "移植 extension amazon-bedrock",
+      "file_count": 15,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0180",
+      "source_id": "P2-0187",
+      "phase": "phase-3-full",
+      "title": "移植 extension amazon-bedrock-mantle",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0181",
+      "source_id": "P2-0188",
+      "phase": "phase-3-full",
+      "title": "移植 extension anthropic",
+      "file_count": 20,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0182",
+      "source_id": "P2-0189",
+      "phase": "phase-3-full",
+      "title": "移植 extension anthropic-vertex",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0183",
+      "source_id": "P2-0190",
+      "phase": "phase-3-full",
+      "title": "移植 extension arcee",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0184",
+      "source_id": "P2-0191",
+      "phase": "phase-3-full",
+      "title": "移植 extension azure-speech",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0185",
+      "source_id": "P2-0192",
+      "phase": "phase-3-full",
+      "title": "移植 extension bonjour",
+      "file_count": 4,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0186",
+      "source_id": "P2-0193",
+      "phase": "phase-3-full",
+      "title": "移植 extension brave",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0187",
+      "source_id": "P2-0194",
+      "phase": "phase-3-full",
+      "title": "移植 extension browser",
+      "file_count": 209,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0188",
+      "source_id": "P2-0195",
+      "phase": "phase-3-full",
+      "title": "移植 extension byteplus",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0189",
+      "source_id": "P2-0196",
+      "phase": "phase-3-full",
+      "title": "移植 extension canvas",
+      "file_count": 19,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0190",
+      "source_id": "P2-0197",
+      "phase": "phase-3-full",
+      "title": "移植 extension cerebras",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0191",
+      "source_id": "P2-0198",
+      "phase": "phase-3-full",
+      "title": "移植 extension chutes",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0192",
+      "source_id": "P2-0199",
+      "phase": "phase-3-full",
+      "title": "移植 extension clickclack",
+      "file_count": 16,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0193",
+      "source_id": "P2-0200",
+      "phase": "phase-3-full",
+      "title": "移植 extension cloudflare-ai-gateway",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0194",
+      "source_id": "P2-0201",
+      "phase": "phase-3-full",
+      "title": "移植 extension codex",
+      "file_count": 116,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0195",
+      "source_id": "P2-0202",
+      "phase": "phase-3-full",
+      "title": "移植 extension codex-supervisor",
+      "file_count": 10,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0196",
+      "source_id": "P2-0203",
+      "phase": "phase-3-full",
+      "title": "移植 extension cohere",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0197",
+      "source_id": "P2-0204",
+      "phase": "phase-3-full",
+      "title": "移植 extension comfy",
+      "file_count": 6,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0198",
+      "source_id": "P2-0205",
+      "phase": "phase-3-full",
+      "title": "移植 extension copilot",
+      "file_count": 17,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0199",
+      "source_id": "P2-0206",
+      "phase": "phase-3-full",
+      "title": "移植 extension copilot-proxy",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0200",
+      "source_id": "P2-0207",
+      "phase": "phase-3-full",
+      "title": "移植 extension deepgram",
+      "file_count": 5,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0201",
+      "source_id": "P2-0208",
+      "phase": "phase-3-full",
+      "title": "移植 extension deepinfra",
+      "file_count": 16,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0202",
+      "source_id": "P2-0209",
+      "phase": "phase-3-full",
+      "title": "移植 extension deepseek",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0203",
+      "source_id": "P2-0210",
+      "phase": "phase-3-full",
+      "title": "移植 extension device-pair",
+      "file_count": 8,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0204",
+      "source_id": "P2-0211",
+      "phase": "phase-3-full",
+      "title": "移植 extension diagnostics-otel",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0205",
+      "source_id": "P2-0212",
+      "phase": "phase-3-full",
+      "title": "移植 extension diagnostics-prometheus",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0206",
+      "source_id": "P2-0213",
+      "phase": "phase-3-full",
+      "title": "移植 extension diffs",
+      "file_count": 20,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0207",
+      "source_id": "P2-0214",
+      "phase": "phase-3-full",
+      "title": "移植 extension diffs-language-pack",
+      "file_count": 4,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0208",
+      "source_id": "P2-0215",
+      "phase": "phase-3-full",
+      "title": "移植 extension discord",
+      "file_count": 374,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0209",
+      "source_id": "P2-0216",
+      "phase": "phase-3-full",
+      "title": "移植 extension document-extract",
+      "file_count": 2,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0210",
+      "source_id": "P2-0217",
+      "phase": "phase-3-full",
+      "title": "移植 extension duckduckgo",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0211",
+      "source_id": "P2-0218",
+      "phase": "phase-3-full",
+      "title": "移植 extension elevenlabs",
+      "file_count": 12,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0212",
+      "source_id": "P2-0219",
+      "phase": "phase-3-full",
+      "title": "移植 extension exa",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0213",
+      "source_id": "P2-0220",
+      "phase": "phase-3-full",
+      "title": "移植 extension fal",
+      "file_count": 9,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0214",
+      "source_id": "P2-0221",
+      "phase": "phase-3-full",
+      "title": "移植 extension feishu",
+      "file_count": 131,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0215",
+      "source_id": "P2-0222",
+      "phase": "phase-3-full",
+      "title": "移植 extension file-transfer",
+      "file_count": 20,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0216",
+      "source_id": "P2-0223",
+      "phase": "phase-3-full",
+      "title": "移植 extension firecrawl",
+      "file_count": 14,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0217",
+      "source_id": "P2-0224",
+      "phase": "phase-3-full",
+      "title": "移植 extension fireworks",
+      "file_count": 7,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0218",
+      "source_id": "P2-0225",
+      "phase": "phase-3-full",
+      "title": "移植 extension github-copilot",
+      "file_count": 15,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0219",
+      "source_id": "P2-0226",
+      "phase": "phase-3-full",
+      "title": "移植 extension gmi",
+      "file_count": 3,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0220",
+      "source_id": "P2-0227",
+      "phase": "phase-3-full",
+      "title": "移植 extension google",
+      "file_count": 51,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0221",
+      "source_id": "P2-0228",
+      "phase": "phase-3-full",
+      "title": "移植 extension google-meet",
+      "file_count": 25,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0222",
+      "source_id": "P2-0229",
+      "phase": "phase-3-full",
+      "title": "移植 extension googlechat",
+      "file_count": 47,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0223",
+      "source_id": "P2-0230",
+      "phase": "phase-3-full",
+      "title": "移植 extension gradium",
+      "file_count": 4,
+      "source_path": "",
+      "status": "pending"
+    },
+    {
+      "id": "P3-0224",
+      "source_id": "P2-0231",
+      "phase": "phase-3-full",
+      "title": "移植 extension groq",
+      "file_count": 4,
+      "source_path": "",
+      "status": "pending"
+    }
+  ],
+  "notes": "Phase 3: full functional migration of deferred/barrel modules from Phase 2."
+}
